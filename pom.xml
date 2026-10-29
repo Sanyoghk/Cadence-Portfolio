@@ -42,7 +42,7 @@
     <log4j2.version>2.25.5</log4j2.version>
     <postgresql.version>42.7.13</postgresql.version>
     <commons-lang3.version>3.18.0</commons-lang3.version>
-    <aws-sdk.version>2.55.7</aws-sdk.version>
+    <aws-sdk.version>2.57.3</aws-sdk.version>
   </properties>
   <dependencyManagement>
     <dependencies>
