@@ -1,6 +1,6 @@
 # Local/integration fixture only. The archived community server is not a production deployment.
 # Official security release 2025-10-15, verified against upstream release commit and source hash.
-FROM golang:1.27.2-alpine@sha256:f92b6ef800e499660581efdabdf25d9d817a9d124eaf900924f0504e7e27e12d AS server-build
+FROM golang:1.27.3-alpine@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb AS server-build
 ENV CGO_ENABLED=0 GOTOOLCHAIN=local
 ADD --checksum=sha256:45521908307306e925c98d629e1c17d78c8b72b6ee242b1bfb1409f7d8ee5841 https://codeload.github.com/minio/minio/tar.gz/9e49d5e7a648f00e26f2246f4dc28e6b07f8c84a /tmp/source.tar.gz
 RUN mkdir /src && tar -xzf /tmp/source.tar.gz -C /src --strip-components=1
@@ -10,7 +10,7 @@ COPY server.go.sum ./go.sum
 RUN go build -mod=readonly -trimpath -ldflags='-s -w' -o /out/minio . \
     && go list -mod=readonly -deps . > /out/server-packages.txt
 
-FROM golang:1.27.2-alpine@sha256:f92b6ef800e499660581efdabdf25d9d817a9d124eaf900924f0504e7e27e12d AS client-build
+FROM golang:1.27.3-alpine@sha256:d200d2dd76b03a99b52651fd1325aff7dcd35422c35c01bac56571b0507f3deb AS client-build
 ENV CGO_ENABLED=0 GOTOOLCHAIN=local
 ADD --checksum=sha256:95cd293c7119f16921a6dc515a1fb74a2227f19fd994b9c8b770a154e802ac44 https://codeload.github.com/minio/mc/tar.gz/7394ce0dd2a80935aded936b09fa12cbb3cb8096 /tmp/source.tar.gz
 RUN mkdir /src && tar -xzf /tmp/source.tar.gz -C /src --strip-components=1
