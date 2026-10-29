@@ -62,6 +62,15 @@ jobs:
             name="${spec%%:*}"
             directory="${spec#*:}"
             docker build --file "docker/$directory/Dockerfile" --tag "cadence-security-$name" .
+            if [ "$name" = gateway ]; then
+              # Validate HTTP and TCP configuration with the same restricted runtime identity.
+              docker run --rm --network none --user 10001:10001 --read-only \
+                --tmpfs /tmp:rw,noexec,nosuid,nodev,size=64m,mode=1777 \
+                --cap-drop ALL --security-opt no-new-privileges --memory 128m --cpus 0.5 --pids-limit 16 \
+                --add-host app:127.0.0.1 --add-host postgres:127.0.0.1 --add-host minio:127.0.0.1 \
+                --mount "type=bind,source=$GITHUB_WORKSPACE/docker/local-gateway/nginx.conf,target=/etc/nginx/nginx.conf,readonly" \
+                --entrypoint nginx cadence-security-gateway -t
+            fi
             "$RUNNER_TEMP/tools/trivy" image --scanners vuln --list-all-pkgs --format json \
               --timeout 5m --output "security-reports/$name.json" "cadence-security-$name"
             python3 scripts/verify_security_reports.py container "security-reports/$name.json"
