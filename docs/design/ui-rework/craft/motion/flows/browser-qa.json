@@ -1,0 +1,114 @@
+{
+  "result": "PASS",
+  "tests": 26,
+  "failures": 0,
+  "results": [
+    {
+      "name": "intro blocks underlying controls during the minimum three seconds",
+      "result": "PASS"
+    },
+    {
+      "name": "public pillar teaser → Account → plan concept → Manager",
+      "result": "PASS"
+    },
+    {
+      "name": "exact consent, generation and approval are separate controls",
+      "result": "PASS"
+    },
+    {
+      "name": "Identity history records a consent decision and approved snapshot",
+      "result": "PASS"
+    },
+    {
+      "name": "prepare content adds a DRAFT; approval and scheduling remain distinct",
+      "result": "PASS"
+    },
+    {
+      "name": "Performance totals are derived; recommendation opens a new Strategy draft",
+      "result": "PASS"
+    },
+    {
+      "name": "source withdrawal and source replacement invalidate downstream preparation",
+      "result": "PASS"
+    },
+    {
+      "name": "switching Workspace clears forms, metrics and actions from the previous Brand",
+      "result": "PASS"
+    },
+    {
+      "name": "tablet manager fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "tablet identity fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "tablet strategy fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "tablet content fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "tablet performance fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile manager fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile identity fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile strategy fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile content fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile performance fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "mobile navigation supports Escape and returns focus",
+      "result": "PASS"
+    },
+    {
+      "name": "narrow manager fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "narrow identity fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "narrow strategy fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "narrow content fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "narrow performance fits the viewport",
+      "result": "PASS"
+    },
+    {
+      "name": "all application requests remain on loopback; no credentials or persistent browser storage",
+      "result": "PASS"
+    },
+    {
+      "name": "reduced motion stops the footer loop and keeps content available",
+      "result": "PASS"
+    }
+  ],
+  "externalRequests": [],
+  "consoleErrors": [],
+  "physicalDeviceTested": false
+}

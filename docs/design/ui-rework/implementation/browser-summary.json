@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "startTime": "2026-10-20T12:44:17.346Z",
+    "duration": 38454.701,
+    "expected": 66,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suites": [
+    {
+      "file": "cream-orbit.spec.ts",
+      "tests": 4
+    },
+    {
+      "file": "identity.spec.ts",
+      "tests": 29
+    },
+    {
+      "file": "onboarding.spec.ts",
+      "tests": 16
+    },
+    {
+      "file": "visual-shell.spec.ts",
+      "tests": 17
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "docs/design/ui-rework/prototype/package.json",
+    "sha256": "a0ebd14791ef4677b97aa779c93df36a73df7ee73c71cae7bbf3b2dea51db5f7"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/pnpm-lock.yaml",
+    "sha256": "8512d5adcdf2528d5c36b6453d518cb6cf4df6eb84e9510f470791c0c0e201ac"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/assets/orbit.png",
+    "sha256": "4a3e4535182e43221a4e693689bb05b323e16ff99479f773fae9cdb09fc6fd5d"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/assets/paper.png",
+    "sha256": "eee3eb6c71d0c5e8e4ec2c54639da0a999d4ff0fb29ea9acee1482d39fb19b5b"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/assets/scroll-line.png",
+    "sha256": "bedd6992ed6ca947451d77148d1249af933eecfe5b3983c75c84c2d071889457"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/Cormorant-Garamond-OFL.txt",
+    "sha256": "2d18818d1e2044bda96e663840ef64c32d1e6aa53a11d05cc8b70e4aa0dffef8"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/DM-Sans-OFL.txt",
+    "sha256": "be5f632588774077cbb19a8d3fd788fbc7861af041f4e7165eae5822b11392b3"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/README.md",
+    "sha256": "4a83873fee7a96bdad2d96280d8e03b646327243dbab5ff0ae38e3c7b5cb9c58"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/cormorant-garamond-latin-italic.woff2",
+    "sha256": "e6d6d1d73858aa9b66f3a3539f9dec22faab2276e61ad1d813bc04dd59c9c122"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/cormorant-garamond-latin-normal.woff2",
+    "sha256": "5d618c462b7a5b74f442e1548880086af71764d9cc7d35c16ab45353da934621"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/public/fonts/dm-sans-latin.woff2",
+    "sha256": "aa530716b0d351866af7dbfa3eee4120fb36f2d071baff8c234185141865c7ff"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/App.jsx",
+    "sha256": "324e45b28d6d4939a82630c373657b9c9b170a07fdb7e3d3350e91c42c596d02"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/Landing.jsx",
+    "sha256": "394cee55c1e37e0c171375e1669c2539b3f5fe5d04660110b0dca85fdd2150f8"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/TextReveal.jsx",
+    "sha256": "c7240c75898133c8c40681dce311f58a569261412654a8e24127aa7f3e64609a"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/Workspace.jsx",
+    "sha256": "ada3159f92334b6df18b2b13a10f1c2dde4daa43c387e00bef19ce2631631f03"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/demo.js",
+    "sha256": "df3ec6e9fc9cdcd581adfaa9ec8467961a058461ad98b7a029ae26d4067ba65f"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/main.jsx",
+    "sha256": "832f752c6b6a454a26dbc4f2654f5bd633f2b103516c8c0abac648308c133a7e"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/motion-engine.js",
+    "sha256": "a37950de85de897db03ac08dc725c5363e0b226da93ed5e42f339f002e9c6bfd"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/motion-hooks.js",
+    "sha256": "65e3f297b2a0cb0c05e340542ea90dbc77334c4570ce95c4620a70405d7fffc2"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/styles.css",
+    "sha256": "b8aa185f471908b5a29fd56b75e37f382a16069fb8057dc8bc08b9d85c63a2da"
+  },
+  {
+    "path": "docs/design/ui-rework/prototype/src/ui.jsx",
+    "sha256": "bb6f3189be5202621e2f23582b593dd1919c0b82951c988b140254b5534376a1"
+  }
+]

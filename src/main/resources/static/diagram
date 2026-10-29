@@ -1,0 +1,94 @@
+@startuml
+title Cadence — Creator-first domain and application architecture
+
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+package "domain" {
+  class CadenceUser {
+    -identityProviderSubject: String
+    -email: String
+    -role: UserRole
+  }
+  class Workspace {
+    -name: String
+    -industry: String
+    -status: WorkspaceStatus
+    +archive(): void
+  }
+  class Brand {
+    -name: String
+    -websiteUrl: URL
+    -signature: BrandSignature
+  }
+  class Strategy {
+    -version: int
+    -status: ApprovalStatus
+    +approve(): void
+  }
+  class SocialPost {
+    -platform: Platform
+    -caption: String
+    -scheduledAt: Instant
+    -status: PostStatus
+  }
+  class PostMetric
+  class Recommendation
+  class Job
+
+  enum UserRole { OWNER; EDITOR; VIEWER }
+  enum WorkspaceStatus { ACTIVE; ARCHIVED }
+}
+
+CadenceUser "many" -- "many" Workspace : memberships
+Workspace "1" o-- "many" Brand
+Brand "1" o-- "many" Strategy
+Brand "1" *-- "0..1" BrandSignature
+Strategy "1" o-- "many" SocialPost
+SocialPost "1" o-- "many" PostMetric
+Recommendation --> Strategy
+
+package "application" {
+  class WorkspaceManagementUseCase
+  class BrandManagementUseCase
+  class AnalyzeBrandUseCase
+  class BuildStrategyUseCase
+  class GenerateContentCalendarUseCase
+  class SyncAnalyticsUseCase
+  class GenerateRecommendationsUseCase
+
+  interface BrandIngestPort
+  interface AiGenerationPort
+  interface ObjectStoragePort
+  interface AnalyticsImportPort
+  interface CsvExportPort
+}
+
+package "adapters" {
+  class SpringMvcApi
+  class ClerkJwtAdapter
+  class PostgreSqlAdapter
+  class AiProviderAdapter
+  class SourceIngestAdapter
+}
+
+SpringMvcApi --> WorkspaceManagementUseCase
+SpringMvcApi --> BrandManagementUseCase
+ClerkJwtAdapter --> CadenceUser
+WorkspaceManagementUseCase --> Workspace
+BrandManagementUseCase --> Brand
+AnalyzeBrandUseCase --> BrandIngestPort
+BuildStrategyUseCase --> AiGenerationPort
+GenerateContentCalendarUseCase --> AiGenerationPort
+SyncAnalyticsUseCase --> AnalyticsImportPort
+PostgreSqlAdapter --> Workspace
+PostgreSqlAdapter --> Brand
+AiProviderAdapter ..|> AiGenerationPort
+SourceIngestAdapter ..|> BrandIngestPort
+
+note bottom
+  Creator-first self-service tenancy.
+  Direct publishing is outside MVP; approved content is exported.
+end note
+@enduml

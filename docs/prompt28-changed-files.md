@@ -1,0 +1,71 @@
+# Задание28 — изменённые файлы
+
+67 файлов этого slice. Existing `docs/design/ui-rework/README.md` и `.agents/` не включены.
+
+- [.dockerignore](../.dockerignore) — Исключить вложенные env files, frontend/node_modules/skills/reports из application build context.
+- [.github/workflows/source-security.yml](../.github/workflows/source-security.yml) — Checksum/digest-pinned current secret, Java SAST и container scans; full reports, read-only permissions.
+- [.gitignore](../.gitignore) — Игнорировать локальные scanner reports.
+- [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) — Отдельный actual backend28 status и оставшийся frontend/cross-stack route.
+- [DEVELOPMENT_PLAN_RU.md](../DEVELOPMENT_PLAN_RU.md) — Синхронный русский backend28 status и remaining scopes.
+- [README.md](../README.md) — Backend security/readiness/audit/runbook entry point.
+- [compose.yaml](../compose.yaml) — Retained local stack использует те же patched PostgreSQL/ClamAV/gateway и canonical MinIO build context.
+- [docker/application/Dockerfile](../docker/application/Dockerfile) — Security updates OS/OpenSSL; named runtime base для независимого scan, прежняя non-root Java architecture.
+- [docker/clamav/Dockerfile](../docker/clamav/Dockerfile) — Pinned ClamAV engine с актуальными Alpine PCRE/security packages.
+- [docker/evidence-renderer/Dockerfile](../docker/evidence-renderer/Dockerfile) — OS fixes, удалить unused codecs/build packages/cache bytes; оставить только четыре pinned renderer distributions.
+- [docker/local-gateway/Dockerfile](../docker/local-gateway/Dockerfile) — Pinned nginx gateway с patched distribution libraries.
+- [docker/minio/Dockerfile](../docker/minio/Dockerfile) — Unchanged pinned upstream fixture source; Go1.27.2, locked security dependencies, compiler package inventory, updater off.
+- [docker/minio/client.go.mod](../docker/minio/client.go.mod) — Exact patched mc module graph.
+- [docker/minio/client.go.sum](../docker/minio/client.go.sum) — Verified mc module checksums.
+- [docker/minio/server.go.mod](../docker/minio/server.go.mod) — Exact patched server module graph; runtime source/contract прежний.
+- [docker/minio/server.go.sum](../docker/minio/server.go.sum) — Verified server module checksums для readonly build.
+- [docker/postgres/Dockerfile](../docker/postgres/Dockerfile) — Pinned PostgreSQL17 + security packages; native su-exec вместо старого Go helper, прежний entrypoint contract.
+- [docker/postgres/runtime-permissions.sql](../docker/postgres/runtime-permissions.sql) — Запретить runtime direct audit/sequence/function privileges.
+- [docs/adr/0040-frontend-bearer-onboarding.md](../docs/adr/0040-frontend-bearer-onboarding.md) — Уточнить ordinary English phrase, вызывавшую false secret match; auth decision не меняется.
+- [docs/astra-medium-mvp-prompts.md](../docs/astra-medium-mvp-prompts.md) — Execution28 без изменения stable00–30/dependencies и без повторной09–22.
+- [docs/backend-demo-runbook.md](../docs/backend-demo-runbook.md) — Probes, request/Job/audit diagnosis, capacity/incident/rollback/rotation/lifecycle procedures.
+- [docs/backend-security-gate.md](../docs/backend-security-gate.md) — Contracts, bounds, audit semantics, cross-module threat matrix и production boundary.
+- [docs/database-migrations.md](../docs/database-migrations.md) — V56/runtime least privilege/no-backfill/capacity semantics.
+- [docs/dependency-security.md](../docs/dependency-security.md) — Fresh tools/inventory/findings/triage/OS updates и CI limitations.
+- [docs/issue-sync.md](../docs/issue-sync.md) — Read-only current issues/permissions, local boundary, no remote closure/push claim.
+- [docs/mvp-prompt-progress.md](../docs/mvp-prompt-progress.md) — Две независимые ledger entries28: backend и frontend/cross-stack.
+- [docs/prompt28-backend-report.md](../docs/prompt28-backend-report.md) — Actual acceptance, findings/fixes/results/limitations и final review.
+- [docs/prompt28-changed-files.md](../docs/prompt28-changed-files.md) — Полный manifest изменений задачи; пользовательские design/skills changes исключены.
+- [docs/verification.md](../docs/verification.md) — Current backend qualification evidence и separate cross-stack scope.
+- [frontend/src/lib/identity-contract.generated.ts](../frontend/src/lib/identity-contract.generated.ts) — Обновить только fingerprint actual OpenAPI,44 schemas без изменений.
+- [scripts/start_local_evidence.ps1](../scripts/start_local_evidence.ps1) — Rebuild gateway при каждом source-based local startup.
+- [scripts/test_verify_postgres_report.py](../scripts/test_verify_postgres_report.py) — Positive/missing/skipped audit report fixture в общем inventory gate.
+- [scripts/test_verify_security_reports.py](../scripts/test_verify_security_reports.py) — Missing/failed/empty inventory/report, HIGH и exact-image/OpenPGP applicability false-green negatives.
+- [scripts/verify_postgres_report.py](../scripts/verify_postgres_report.py) — Обязательный executed audit migration report; skipped/missing не pass.
+- [scripts/verify_security_reports.py](../scripts/verify_security_reports.py) — Fail closed incomplete/HIGH/CRITICAL/unreviewed UNKNOWN; exact-image proof только для отсутствующих OpenPGP packages, raw findings retained.
+- [src/main/java/com/cadence/application/repositories/MetricImportRepository.java](../src/main/java/com/cadence/application/repositories/MetricImportRepository.java) — Mandatory-transaction DB timestamp projection в Instant, без нового I/O вне repository.
+- [src/main/java/com/cadence/application/services/CreatorReportService.java](../src/main/java/com/cadence/application/services/CreatorReportService.java) — Coherent result/Job completion timestamp, fresh post-write fence и safe failure correlation.
+- [src/main/java/com/cadence/application/services/CsvExportService.java](../src/main/java/com/cadence/application/services/CsvExportService.java) — Coherent result/Job completion timestamp, fresh post-write fence и safe failure correlation.
+- [src/main/java/com/cadence/application/services/MetricImportService.java](../src/main/java/com/cadence/application/services/MetricImportService.java) — Coherent DB ingestion timestamp batch + safe failure diagnostics; fresh publication guards сохранены.
+- [src/main/java/com/cadence/application/services/WorkerFailureDiagnostics.java](../src/main/java/com/cadence/application/services/WorkerFailureDiagnostics.java) — Fixed worker failure categories/operation/attempt correlation; no raw messages, causes or stack traces.
+- [src/main/java/com/cadence/presentation/ReadinessController.java](../src/main/java/com/cadence/presentation/ReadinessController.java) — Core DB readiness, bounded query и fixed safe503.
+- [src/main/java/com/cadence/security/ApiRateLimit.java](../src/main/java/com/cadence/security/ApiRateLimit.java) — Bounded account windows/expiry без eviction active accounts; monotonic clock.
+- [src/main/java/com/cadence/security/ApiRateLimitFilter.java](../src/main/java/com/cadence/security/ApiRateLimitFilter.java) — Authenticated actor rate admission без доверия client tenant/header/session.
+- [src/main/java/com/cadence/security/ApiRequestBoundary.java](../src/main/java/com/cadence/security/ApiRequestBoundary.java) — Pre-auth process admission/semaphore, generated UUID/MDC, headers, bounded redacted logs.
+- [src/main/java/com/cadence/security/ApiRequestTelemetry.java](../src/main/java/com/cadence/security/ApiRequestTelemetry.java) — Fixed-cardinality process status/rate/capacity counters, internal JMX.
+- [src/main/java/com/cadence/security/SecurityConfiguration.java](../src/main/java/com/cadence/security/SecurityConfiguration.java) — Exact public GET readiness, CORS exposes safe correlation/retry headers; auth architecture preserved.
+- [src/main/resources/application-prod.properties](../src/main/resources/application-prod.properties) — Отключить raw SQL/bind/row diagnostics, способные раскрыть user data.
+- [src/main/resources/application.properties](../src/main/resources/application.properties) — Validated HTTP bounds и server-generated correlation в log pattern.
+- [src/main/resources/db/migration/V56__security_audit_trail.sql](../src/main/resources/db/migration/V56__security_audit_trail.sql) — Новая append-only audit schema/triggers; atomic rollback, honest actor origin, no backfill, bounded sequence.
+- [src/main/resources/openapi/cadence.json](../src/main/resources/openapi/cadence.json) — Additive readiness/rate/capacity/correlation contract; shared response references.
+- [src/test/java/com/cadence/application/WorkerFailureDiagnosticsTest.java](../src/test/java/com/cadence/application/WorkerFailureDiagnosticsTest.java) — Negative fixture: malicious exception/cause не попадают в logs.
+- [src/test/java/com/cadence/infrastructure/storage/ClamdContainerIntegrationTest.java](../src/test/java/com/cadence/infrastructure/storage/ClamdContainerIntegrationTest.java) — Real engine/signatures на patched image, прежние assertions.
+- [src/test/java/com/cadence/infrastructure/storage/FullEvidenceProviderIntegrationTest.java](../src/test/java/com/cadence/infrastructure/storage/FullEvidenceProviderIntegrationTest.java) — Full pipeline на тех же patched images, private credentials/least privilege guards сохранены.
+- [src/test/java/com/cadence/infrastructure/storage/MinioEvidenceObjectStorageTest.java](../src/test/java/com/cadence/infrastructure/storage/MinioEvidenceObjectStorageTest.java) — S3/anonymous/least-privilege qualification patched fixture.
+- [src/test/java/com/cadence/persistence/PostgreSqlCreatorReportTest.java](../src/test/java/com/cadence/persistence/PostgreSqlCreatorReportTest.java) — Backward-clock completion и fresh expiry/rollback/audit regressions.
+- [src/test/java/com/cadence/persistence/PostgreSqlCsvExportTest.java](../src/test/java/com/cadence/persistence/PostgreSqlCsvExportTest.java) — Scheduling/capture/publication audit + backward-clock/post-write expiry/rollback regressions.
+- [src/test/java/com/cadence/persistence/PostgreSqlMetricImportTest.java](../src/test/java/com/cadence/persistence/PostgreSqlMetricImportTest.java) — Independent SQL timestamp assertion; backward-clock/post-write expiry regression, preserved raw checksum/reported times.
+- [src/test/java/com/cadence/persistence/PostgreSqlPersistenceTest.java](../src/test/java/com/cadence/persistence/PostgreSqlPersistenceTest.java) — Exact migration inventory1–56 для новой V56, прежние strict checks сохранены.
+- [src/test/java/com/cadence/persistence/PostgreSqlPostApiTest.java](../src/test/java/com/cadence/persistence/PostgreSqlPostApiTest.java) — Approval audit exactly once; runtime/SQL audit forgery/read/delete/truncate/execute negatives.
+- [src/test/java/com/cadence/persistence/PostgreSqlSecurityAuditMigrationTest.java](../src/test/java/com/cadence/persistence/PostgreSqlSecurityAuditMigrationTest.java) — Populated V55→V56, no-backfill, rollback, honest DB principal, exhaustion fail-closed.
+- [src/test/java/com/cadence/persistence/PostgreSqlTestDatabase.java](../src/test/java/com/cadence/persistence/PostgreSqlTestDatabase.java) — Все PG suites используют patched lazy fixture; explicit disposable-server/availability contract сохранён.
+- [src/test/java/com/cadence/presentation/OpenApiContractAssertions.java](../src/test/java/com/cadence/presentation/OpenApiContractAssertions.java) — Resolve shared response refs для реального transport error contract.
+- [src/test/java/com/cadence/presentation/ReadinessControllerTest.java](../src/test/java/com/cadence/presentation/ReadinessControllerTest.java) — Dependency/query-timeout failure redaction и closed resources.
+- [src/test/java/com/cadence/security/ApiRequestBoundaryTest.java](../src/test/java/com/cadence/security/ApiRequestBoundaryTest.java) — Rate/concurrency/burst/expiry/full-map/MDC/headers/log redaction/capacity regression tests.
+- [src/test/java/com/cadence/security/BackendObservabilityIntegrationTest.java](../src/test/java/com/cadence/security/BackendObservabilityIntegrationTest.java) — Actual HTTP health/readiness/security headers/rate/scope/session negatives.
+- [src/test/java/com/cadence/security/SecurityIntegrationTest.java](../src/test/java/com/cadence/security/SecurityIntegrationTest.java) — Protected-operation inventory учитывает только два exact public GET probes.
+- [src/test/java/com/cadence/support/TestContainerImages.java](../src/test/java/com/cadence/support/TestContainerImages.java) — Lazy common PostgreSQL/ClamAV/MinIO builds из тех же reviewed Dockerfiles/manifests.

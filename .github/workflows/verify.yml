@@ -1,0 +1,165 @@
+name: Cadence verification
+
+on:
+  push:
+    branches: [main, mvp]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  frontend:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24.19.0'
+      - name: Install pinned package manager and frozen dependencies
+        run: |
+          npm install --global pnpm@11.25.0 --ignore-scripts
+          pnpm install --frozen-lockfile
+          pnpm peers check
+      - name: Scan complete frontend dependency graph
+        run: pnpm audit --audit-level=low
+      - name: Lint, types, unit tests and static production build
+        run: |
+          pnpm lint
+          pnpm typecheck
+          pnpm test
+          pnpm build
+          pnpm verify:export
+      - name: Install official pinned Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Browser contracts, auth gate, accessibility and responsive onboarding
+        run: pnpm test:e2e
+      # Live Clerk authentication is an explicit external gate; no secret-less success claim.
+  dependency-security:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Resolve all dependencies and generate runtime and test SBOM
+        run: >-
+          sh ./mvnw --batch-mode --no-transfer-progress test-compile
+          org.cyclonedx:cyclonedx-maven-plugin:2.9.3:makeAggregateBom
+          -DincludeTestScope=true -DoutputFormat=json -DoutputName=bom.cdx
+      - name: Install pinned OSV scanner
+        run: |
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 180 \
+            https://github.com/google/osv-scanner/releases/download/v2.5.1/osv-scanner_linux_amd64 \
+            --output "$RUNNER_TEMP/osv-scanner"
+          echo "f9f25499a2c8cc367b3af45df2ea7eeca7fbccceab9c35079968f4b3652194be  $RUNNER_TEMP/osv-scanner" | sha256sum --check
+          chmod +x "$RUNNER_TEMP/osv-scanner"
+      - name: Scan every resolved dependency
+        run: >-
+          "$RUNNER_TEMP/osv-scanner" scan source -L target/bom.cdx.json
+          --all-packages --format=json --output-file=target/osv-results.json
+      - name: Require complete clean scan report
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/verify_dependency_scan.py target/bom.cdx.json target/osv-results.json
+      - name: Preserve dependency scan evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: dependency-security-reports
+          path: |
+            target/bom.cdx.json
+            target/osv-results.json
+          retention-days: 7
+          if-no-files-found: error
+  verify:
+    # Keep the audited sandbox intact; host kernel/runtime compatibility is probed below.
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    env:
+      CADENCE_RENDERER_APPARMOR_PROFILE: cadence-evidence-renderer
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Require Docker for PostgreSQL tests
+        run: docker info
+      - name: Load only the enforcing renderer AppArmor profile
+        run: |
+          restriction_before=$(sysctl -n kernel.apparmor_restrict_unprivileged_userns)
+          sudo apparmor_parser --replace docker/evidence-renderer/cadence-evidence-renderer.apparmor
+          sudo python3 -c "from pathlib import Path; assert 'cadence-evidence-renderer (enforce)' in Path('/sys/kernel/security/apparmor/profiles').read_text().splitlines(), 'Renderer AppArmor profile is not enforced'"
+          test "$(sysctl -n kernel.apparmor_restrict_unprivileged_userns)" = "$restriction_before"
+      - name: Verify renderer kernel boundaries and real sandbox before Maven
+        run: |
+          set -euo pipefail
+          docker build --tag cadence-renderer-preflight docker/evidence-renderer
+          docker run --rm --network none --cap-drop ALL --security-opt no-new-privileges \
+            --security-opt apparmor=cadence-evidence-renderer \
+            --security-opt seccomp=docker/evidence-renderer/seccomp.json \
+            --read-only --tmpfs /tmp:rw,noexec,nosuid,nodev,size=128m \
+            --tmpfs /dev/mqueue:ro,noexec,nosuid,nodev,size=4k,mode=000 \
+            --shm-size=256m --memory=2g --cpus=1 --pids-limit=256 \
+            --entrypoint python3 cadence-renderer-preflight \
+            -I /opt/evidence-renderer/namespace_probe.py cadence-evidence-renderer \
+            2>&1 | tee "$RUNNER_TEMP/renderer-kernel-preflight.log"
+          docker run --rm --network none --cap-drop ALL --security-opt no-new-privileges \
+            --security-opt apparmor=cadence-evidence-renderer \
+            --security-opt seccomp=docker/evidence-renderer/seccomp.json \
+            --read-only --tmpfs /tmp:rw,noexec,nosuid,nodev,size=128m \
+            --tmpfs /dev/mqueue:ro,noexec,nosuid,nodev,size=4k,mode=000 \
+            --shm-size=256m --memory=2g --cpus=1 --pids-limit=256 \
+            --entrypoint python3 cadence-renderer-preflight -I /opt/evidence-renderer/smoke.py \
+            2>&1 | tee --append "$RUNNER_TEMP/renderer-kernel-preflight.log"
+      - name: Collect bounded renderer kernel denials
+        if: ${{ failure() }}
+        run: |
+          set -euo pipefail
+          timeout 15s sudo journalctl --dmesg --since '10 minutes ago' --no-pager --output=cat |
+            python3 scripts/collect_renderer_kernel_denials.py |
+            tee "$RUNNER_TEMP/renderer-kernel-denials.json"
+      - name: Compile, test, format and coverage checks
+        run: sh ./mvnw --batch-mode --no-transfer-progress clean verify
+      - name: Reject missing or skipped PostgreSQL tests
+        run: |
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+          python3 scripts/verify_postgres_report.py
+          python3 scripts/verify_evidence_reports.py
+      - name: Verify renderer Python suite inside its pinned image
+        run: |
+          docker build --tag cadence-renderer-verification docker/evidence-renderer
+          docker run --rm --network none --cap-drop ALL --security-opt no-new-privileges \
+            --read-only --tmpfs /tmp:rw,noexec,nosuid,nodev,size=128m \
+            --tmpfs /dev/mqueue:ro,noexec,nosuid,nodev,size=4k,mode=000 \
+            --entrypoint python3 cadence-renderer-verification \
+            -I -m unittest discover -s /opt/evidence-renderer -p 'test_*.py'
+      - name: Preserve verification and kernel preflight evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: verification-reports
+          path: |
+            ${{ runner.temp }}/renderer-kernel-preflight.log
+            ${{ runner.temp }}/renderer-kernel-denials.json
+            target/surefire-reports/*.xml
+            target/surefire-reports/*.txt
+            target/site/jacoco/jacoco.xml
+          retention-days: 7
+          if-no-files-found: warn

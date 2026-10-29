@@ -1,0 +1,84 @@
+name: Source and container security
+
+on:
+  push:
+    branches: [main, mvp]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-security:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install checksum-verified official scanners
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/tools" security-reports
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 180 \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz -o "$RUNNER_TEMP/gitleaks.tar.gz"
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  $RUNNER_TEMP/gitleaks.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$RUNNER_TEMP/tools" gitleaks
+          curl --fail --location --retry 3 --connect-timeout 15 --max-time 180 \
+            https://github.com/aquasecurity/trivy/releases/download/v0.76.0/trivy_0.76.0_Linux-64bit.tar.gz -o "$RUNNER_TEMP/trivy.tar.gz"
+          echo "e24b1c51293c1b15e4ba8d45bbc7891ba053f90278ec2698f3562c993e145fe7  $RUNNER_TEMP/trivy.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/trivy.tar.gz" -C "$RUNNER_TEMP/tools" trivy
+      - name: Scan current checkout for secrets (redacted)
+        run: >-
+          "$RUNNER_TEMP/tools/gitleaks" dir --redact --no-banner --report-format json
+          --report-path security-reports/gitleaks.json .
+      - name: Java SAST (local engine, no source upload or telemetry)
+        run: |
+          docker run --rm --memory=1g --cpus=2 --pids-limit=128 --cap-drop ALL --security-opt no-new-privileges \
+            --mount "type=bind,source=$GITHUB_WORKSPACE/src/main/java,target=/src,readonly" \
+            --entrypoint semgrep semgrep/semgrep:1.181.0@sha256:81474464c1f07483ba0682a44787fd93c91397419762a04abe2bafaae396304b \
+            scan --config p/java --metrics off --disable-version-check --strict --json /src \
+            > security-reports/semgrep.json
+          python3 scripts/verify_security_reports.py sast security-reports/semgrep.json
+          # Audit rules can flag intentional public HTTP ingestion; no nosemgrep/exclusions/baseline.
+          # Findings remain visible as warnings + full artifacts and require explicit human triage.
+      - name: Build and scan complete renderer image
+        run: |
+          docker build --tag cadence-security-renderer docker/evidence-renderer
+          "$RUNNER_TEMP/tools/trivy" image --scanners vuln --list-all-pkgs --format json \
+            --timeout 5m --output security-reports/renderer.json cadence-security-renderer
+          python3 scripts/verify_security_reports.py container security-reports/renderer.json
+      - name: Build and scan application OS/JRE runtime base
+        run: |
+          docker build --file docker/application/Dockerfile --target runtime-base --tag cadence-security-runtime-base .
+          "$RUNNER_TEMP/tools/trivy" image --scanners vuln --list-all-pkgs --format json \
+            --timeout 5m --output security-reports/runtime-base.json cadence-security-runtime-base
+          python3 scripts/verify_security_reports.py container security-reports/runtime-base.json
+      - name: Build and scan patched infrastructure images
+        run: |
+          for spec in postgres:postgres clamav:clamav gateway:local-gateway; do
+            name="${spec%%:*}"
+            directory="${spec#*:}"
+            docker build --file "docker/$directory/Dockerfile" --tag "cadence-security-$name" .
+            "$RUNNER_TEMP/tools/trivy" image --scanners vuln --list-all-pkgs --format json \
+              --timeout 5m --output "security-reports/$name.json" "cadence-security-$name"
+            python3 scripts/verify_security_reports.py container "security-reports/$name.json"
+          done
+      - name: Scan patched local MinIO fixture and verify exact-package advisory applicability
+        run: |
+          docker build --tag cadence-security-minio docker/minio
+          "$RUNNER_TEMP/tools/trivy" image --scanners vuln --list-all-pkgs --format json \
+            --timeout 5m --output security-reports/minio.json cadence-security-minio
+          # Raw UNKNOWN records stay in the artifact. Only GO-2026-5932 can be reviewed through
+          # immutable-image compiler inventory; absent/incomplete proof or other UNKNOWN fails.
+          python3 scripts/verify_security_reports.py minio security-reports/minio.json
+      - name: Preserve full security reports
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: source-container-security-reports
+          path: security-reports/*.json
+          retention-days: 7
+          if-no-files-found: error

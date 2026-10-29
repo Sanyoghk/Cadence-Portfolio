@@ -1,0 +1,7 @@
+# Opt in only after loading the enforcing host profile; Docker Desktop has no AppArmor LSM.
+services:
+  renderer:
+    environment:
+      CADENCE_RENDERER_APPARMOR_PROFILE: cadence-evidence-renderer
+    security_opt:
+      - apparmor=cadence-evidence-renderer

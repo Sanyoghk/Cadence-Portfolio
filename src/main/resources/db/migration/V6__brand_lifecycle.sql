@@ -1,0 +1,3 @@
+ALTER TABLE brands ADD COLUMN status VARCHAR(32) NOT NULL DEFAULT 'ACTIVE';
+ALTER TABLE brands
+    ADD CONSTRAINT brands_status_check CHECK (status IN ('ACTIVE', 'ARCHIVED'));

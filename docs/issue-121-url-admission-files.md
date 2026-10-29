@@ -1,0 +1,42 @@
+# Задание03 — полный перечень изменённых файлов
+
+Всего 38 файлов. Пути относительно repository; raw production code не скрыт в docs.
+
+- [DEVELOPMENT_PLAN.md](../DEVELOPMENT_PLAN.md) — Синхронный actual progress и оставшиеся scopes.
+- [DEVELOPMENT_PLAN_RU.md](../DEVELOPMENT_PLAN_RU.md) — Синхронный actual progress и оставшиеся scopes.
+- [docker/postgres/runtime-permissions.sql](../docker/postgres/runtime-permissions.sql) — V39 constraints/triggers либо append-only runtime privileges.
+- [docs/adr/0022-url-text-admission.md](adr/0022-url-text-admission.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [docs/adr/README.md](adr/README.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [docs/issue-121-url-admission-files.md](issue-121-url-admission-files.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [docs/issue-121-url-admission-slice.md](issue-121-url-admission-slice.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [docs/mvp-prompt-progress.md](mvp-prompt-progress.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [docs/url-evidence-admission-api.md](url-evidence-admission-api.md) — ADR/API/report/manifest/ledger: проверяемый contract, scope и evidence.
+- [scripts/test_verify_postgres_report.py](../scripts/test_verify_postgres_report.py) — Обязательность новых PostgreSQL reports и regression для report gate.
+- [scripts/verify_postgres_report.py](../scripts/verify_postgres_report.py) — Обязательность новых PostgreSQL reports и regression для report gate.
+- [src/main/java/com/cadence/application/repositories/EvidenceAdmissionRepository.java](../src/main/java/com/cadence/application/repositories/EvidenceAdmissionRepository.java) — Persistence snapshot lookup / exact URL consent tuple.
+- [src/main/java/com/cadence/application/repositories/UrlTextSnapshotRepository.java](../src/main/java/com/cadence/application/repositories/UrlTextSnapshotRepository.java) — Persistence snapshot lookup / exact URL consent tuple.
+- [src/main/java/com/cadence/application/results/UrlAdmissionDetails.java](../src/main/java/com/cadence/application/results/UrlAdmissionDetails.java) — Dedicated safe URL API/DTO; no private storage reference.
+- [src/main/java/com/cadence/application/results/UrlAdmissionSnapshot.java](../src/main/java/com/cadence/application/results/UrlAdmissionSnapshot.java) — Dedicated safe URL API/DTO; no private storage reference.
+- [src/main/java/com/cadence/application/results/UrlReviewPreview.java](../src/main/java/com/cadence/application/results/UrlReviewPreview.java) — Dedicated safe URL API/DTO; no private storage reference.
+- [src/main/java/com/cadence/application/services/UrlFetchWorker.java](../src/main/java/com/cadence/application/services/UrlFetchWorker.java) — Atomic acquisition receipt до successful original Job completion.
+- [src/main/java/com/cadence/application/services/UrlReviewTransactions.java](../src/main/java/com/cadence/application/services/UrlReviewTransactions.java) — Locked capture/final validation, consent и current read.
+- [src/main/java/com/cadence/application/usecases/ReviewUrlEvidenceUseCase.java](../src/main/java/com/cadence/application/usecases/ReviewUrlEvidenceUseCase.java) — Bounded physical verification и local re-extraction вне transaction.
+- [src/main/java/com/cadence/domain/EvidenceAdmission.java](../src/main/java/com/cadence/domain/EvidenceAdmission.java) — URL snapshot/scan consent и exact currentness invariants.
+- [src/main/java/com/cadence/domain/UrlReviewContent.java](../src/main/java/com/cadence/domain/UrlReviewContent.java) — Source/scan/ledger eligibility и physical bytes integrity.
+- [src/main/java/com/cadence/domain/UrlReviewToken.java](../src/main/java/com/cadence/domain/UrlReviewToken.java) — Exact preview selectors без client content.
+- [src/main/java/com/cadence/domain/UrlTextSnapshot.java](../src/main/java/com/cadence/domain/UrlTextSnapshot.java) — Immutable original fetch/extraction receipt и canonical projection.
+- [src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java](../src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java) — Dedicated safe URL API/DTO; no private storage reference.
+- [src/main/java/com/cadence/presentation/dto/AdmitUrlEvidenceRequest.java](../src/main/java/com/cadence/presentation/dto/AdmitUrlEvidenceRequest.java) — Dedicated safe URL API/DTO; no private storage reference.
+- [src/main/resources/db/migration/V39__url_text_review.sql](../src/main/resources/db/migration/V39__url_text_review.sql) — V39 constraints/triggers либо append-only runtime privileges.
+- [src/main/resources/openapi/cadence.json](../src/main/resources/openapi/cadence.json) — OpenAPI трёх URL routes и exact DTO schemas; old semantics сохранены.
+- [src/test/java/com/cadence/application/UrlFetchWorkerTest.java](../src/test/java/com/cadence/application/UrlFetchWorkerTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/domain/UrlReviewDomainTest.java](../src/test/java/com/cadence/domain/UrlReviewDomainTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/persistence/PostgreSqlPersistenceTest.java](../src/test/java/com/cadence/persistence/PostgreSqlPersistenceTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/persistence/PostgreSqlUrlReviewMigrationTest.java](../src/test/java/com/cadence/persistence/PostgreSqlUrlReviewMigrationTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/persistence/PostgreSqlUrlReviewTest.java](../src/test/java/com/cadence/persistence/PostgreSqlUrlReviewTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/persistence/PostgreSqlUtcMigrationTest.java](../src/test/java/com/cadence/persistence/PostgreSqlUtcMigrationTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/presentation/OpenApiContractTest.java](../src/test/java/com/cadence/presentation/OpenApiContractTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/security/UrlReviewApiIntegrationTest.java](../src/test/java/com/cadence/security/UrlReviewApiIntegrationTest.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [src/test/java/com/cadence/support/UrlReviewApiContract.java](../src/test/java/com/cadence/support/UrlReviewApiContract.java) — Regression, API/domain/PG/migration/runtime/concurrency contract verification.
+- [docs/evidence-admission-api.md](evidence-admission-api.md) — Разделение TEXT route и новых URL routes; общий withdrawal.
+- [docs/adr/0021-source-kind-ai-eligibility.md](adr/0021-source-kind-ai-eligibility.md) — Ссылка на completed03 без изменения approved P1–P3.

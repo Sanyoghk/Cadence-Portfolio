@@ -1,0 +1,1969 @@
+{
+ "url": "http://127.0.0.1:4177/",
+ "at": "2026-10-19T10:59:47.420Z",
+ "allow": [
+  "hairline",
+  "palette-cream",
+  "palette-terracotta",
+  "few-pictures",
+  "no-footage",
+  "name-only-title",
+  "late-title"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.7,
+    0.54,
+    0.16,
+    0.42,
+    0.41
+   ],
+   "motion": {
+    "elements": 10,
+    "css": 4,
+    "transitions": 5,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3619,
+     "screens": 4,
+     "words": 302,
+     "img": 29,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "orbit.png",
+      "scroll-line.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 338.4,
+     "vw": 23.5,
+     "font": "Display",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 116,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 338.4,
+     "font": "Display"
+    },
+    "headings": [
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 338.4,
+      "vw": 23.5,
+      "font": "Display",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 116,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 418,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 824,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1721,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1963,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 2043,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "About us",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 2736,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 290.9,
+      "vw": 20.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3221,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Text",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Display",
+       "share": 0.11,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      24,
+      72,
+      291,
+      338
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Text",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.6
+     },
+     "measureChars": 66,
+     "max": {
+      "size": 338.4,
+      "vw": 23.5,
+      "font": "Display",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf8f2",
+       "top": 767,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.76
+      },
+      {
+       "color": "#686157",
+       "share": 0.2
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.02
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      },
+      {
+       "color": "#f3f0e8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.fixed-frame 1404px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 28,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "display",
+     "text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3619,
+    "margins": {
+     "left": 46,
+     "right": 46
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 767,
+      "words": 26,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 338,
+       "tag": "h1"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 157,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#brand-identity.identity-curtain.page-grid",
+      "tag": "section",
+      "top": 767,
+      "height": 814,
+      "words": 89,
+      "media": 0,
+      "middle": 77,
+      "heading": {
+       "text": "Let’s read your brand.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 51,
+      "right": 95,
+      "textLeft": 95,
+      "textRight": 156,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 1721,
+      "height": 1015,
+      "words": 94,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 72,
+       "tag": "h3"
+      },
+      "left": 34,
+      "right": 317,
+      "textLeft": 46,
+      "textRight": 317,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 2736,
+      "height": 397,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "More time for the work you love.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 666,
+      "right": 251,
+      "textLeft": 666,
+      "textRight": 251,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.public-footer.page-grid",
+      "tag": "footer",
+      "top": 3133,
+      "height": 486,
+      "words": 25,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "CADENCE",
+       "size": 291,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 338,
+      "top": 116,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 46,
+      "n": 5
+     },
+     {
+      "x": 95,
+      "n": 3
+     },
+     {
+      "x": 666,
+      "n": 2
+     },
+     {
+      "x": 768,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 660,
+     "y": 780,
+     "w": 780,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.69,
+    0.47,
+    0.26,
+    0.35
+   ],
+   "motion": {
+    "elements": 10,
+    "css": 4,
+    "transitions": 5,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3373,
+     "screens": 3.3,
+     "words": 302,
+     "img": 29,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "orbit.png",
+      "scroll-line.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 180.5,
+     "vw": 23.5,
+     "font": "Display",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 116,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 180.5,
+     "font": "Display"
+    },
+    "headings": [
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 180.5,
+      "vw": 23.5,
+      "font": "Display",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 116,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 286,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 689,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1624,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 1834,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 1914,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "About us",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2578,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 155.1,
+      "vw": 20.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3098,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Text",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Display",
+       "share": 0.11,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      24,
+      38,
+      42,
+      155,
+      181
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Text",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.6
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 180.5,
+      "vw": 23.5,
+      "font": "Display",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf8f2",
+       "top": 632,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.76
+      },
+      {
+       "color": "#686157",
+       "share": 0.2
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.02
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      },
+      {
+       "color": "#f3f0e8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.fixed-frame 732px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 28,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "display",
+     "text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3373,
+    "margins": {
+     "left": 25,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 632,
+      "words": 26,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 180,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#brand-identity.identity-curtain.page-grid",
+      "tag": "section",
+      "top": 632,
+      "height": 852,
+      "words": 89,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s read your brand.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 30,
+      "right": 74,
+      "textLeft": 74,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 1624,
+      "height": 954,
+      "words": 94,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 42,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 60,
+      "textLeft": 25,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 2578,
+      "height": 432,
+      "words": 60,
+      "media": 0,
+      "middle": 39,
+      "heading": {
+       "text": "More time for the work you love.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 25,
+      "right": 33,
+      "textLeft": 25,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.public-footer.page-grid",
+      "tag": "footer",
+      "top": 3010,
+      "height": 364,
+      "words": 25,
+      "media": 0,
+      "middle": 435,
+      "heading": {
+       "text": "CADENCE",
+       "size": 155,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 25,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 180,
+      "top": 116,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 25,
+      "n": 6
+     },
+     {
+      "x": 55,
+      "n": 2
+     },
+     {
+      "x": 432,
+      "n": 2
+     },
+     {
+      "x": 74,
+      "n": 1
+     },
+     {
+      "x": 400,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.46,
+    0.59,
+    0.67,
+    0.25,
+    0.38,
+    0.44
+   ],
+   "motion": {
+    "elements": 10,
+    "css": 4,
+    "transitions": 5,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4560,
+     "screens": 5.4,
+     "words": 296,
+     "img": 29,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 1,
+     "uiAbuse": false,
+     "realPictures": 1,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "orbit.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 78.8,
+     "vw": 20.2,
+     "font": "Display",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 128,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 78.8,
+     "font": "Display"
+    },
+    "headings": [
+     {
+      "text": "Cadence",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 17,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "›",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Text",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.02,
+      "top": 17,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 78.8,
+      "vw": 20.2,
+      "font": "Display",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 128,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 222,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 889,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring your source material.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Display",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 1162,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2352,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2563,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2860,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 3090,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 3387,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "About us",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Display",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3693,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "More time for the work you love.",
+      "words": 7,
+      "chars": 32,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.7,
+      "top": 3761,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 78.8,
+      "vw": 20.2,
+      "font": "Display",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4327,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Text",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "Display",
+       "share": 0.12,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      16,
+      24,
+      34,
+      42,
+      79
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Text",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.6
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 78.8,
+      "vw": 20.2,
+      "font": "Display",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.04,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#faf8f2",
+       "top": 844,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f3f0e8",
+       "top": 1088,
+       "hsl": {
+        "h": 44,
+        "s": 0.31,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.75
+      },
+      {
+       "color": "#686157",
+       "share": 0.21
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.02
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      },
+      {
+       "color": "#f3f0e8",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 1,
+     "hairlineSamples": [
+      "div.fixed-frame 370px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.16
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "display",
+     "text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4560,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 26,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 79,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 41,
+      "textLeft": 24,
+      "textRight": 73,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-heading",
+      "tag": "div",
+      "top": 889,
+      "height": 125,
+      "words": 8,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 49,
+      "right": 50,
+      "textLeft": 49,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "form.source-form",
+      "tag": "form",
+      "top": 1088,
+      "height": 1132,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Bring your source material.",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 49,
+      "right": 49,
+      "textLeft": 49,
+      "textRight": 70,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 2352,
+      "height": 1341,
+      "words": 94,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 42,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 12,
+      "textLeft": 24,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 3693,
+      "height": 516,
+      "words": 60,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "More time for the work you love.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 24,
+      "right": 29,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.public-footer.page-grid",
+      "tag": "footer",
+      "top": 4209,
+      "height": 351,
+      "words": 25,
+      "media": 0,
+      "middle": 779,
+      "heading": {
+       "text": "CADENCE",
+       "size": 79,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 79,
+      "top": 128,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 49,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Little motion: 10 element(s) moved while the page loaded and scrolled.",
+   "fix": "Give every section an entrance for its parts (not one fade of the whole block) and add one moving picture: a looping clip or a slow move on a photograph."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\desktop-page-01.jpg",
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\docs\\design\\ui-rework\\craft\\inspect-landing\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,482 @@
+{
+  "capture_date": "2026-10-19",
+  "images": [
+    {
+      "path": "craft/inspect-app/desktop-fold.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 93981,
+      "sha256": "71e336c275d86ab9ac9a42d02f5d64364f2f7dd6a4da695dd0f71ba9831b43f4"
+    },
+    {
+      "path": "craft/inspect-app/desktop-page-01.jpg",
+      "width": 1600,
+      "height": 500,
+      "bytes": 60510,
+      "sha256": "9874af983b94a8785062ea2aa821ebfb50cf47e3e043e12919d0d2a03704d035"
+    },
+    {
+      "path": "craft/inspect-app/mobile-fold.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 37430,
+      "sha256": "135822e48f830149b068948fd5b5766a8e0a31341b3ff020bc1f28f091ae54cc"
+    },
+    {
+      "path": "craft/inspect-app/mobile-page-01.jpg",
+      "width": 1560,
+      "height": 844,
+      "bytes": 102533,
+      "sha256": "e4f7e9dfb8cc4598b079a5b951f61450718dac66b1ccccadfd0ced1885986efa"
+    },
+    {
+      "path": "craft/inspect-app/tablet-fold.jpg",
+      "width": 768,
+      "height": 1024,
+      "bytes": 63286,
+      "sha256": "ce596853e028279d1227f506e73a213b75a15895d56ad86c03da59bb862f8670"
+    },
+    {
+      "path": "craft/inspect-app/tablet-page-01.jpg",
+      "width": 1536,
+      "height": 683,
+      "bytes": 59980,
+      "sha256": "31815ba7eca0fffe49aa18bc92c05aa8c1c25c71a71d7b102f7284d92503c454"
+    },
+    {
+      "path": "craft/inspect-landing/desktop-fold.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 94725,
+      "sha256": "0fca4c78d4a486132060b0e17ef985658e7e67ef8c6bb72d164f8b09a6f30c7c"
+    },
+    {
+      "path": "craft/inspect-landing/desktop-page-01.jpg",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 119845,
+      "sha256": "61226e84c77f0f928253a302a35e1196b6d7d850a004b6a4f59fd3f294aac9e0"
+    },
+    {
+      "path": "craft/inspect-landing/desktop-page-02.jpg",
+      "width": 1600,
+      "height": 500,
+      "bytes": 34159,
+      "sha256": "1c5ce9233649158f08cffd57f4d6c27968b86bf4184e486eb20021f108e5d7f3"
+    },
+    {
+      "path": "craft/inspect-landing/mobile-fold.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 30482,
+      "sha256": "f147c5ed1cd9c810711fb2d5513a958f92f9b77b1f092e03ef77e3257dd01c46"
+    },
+    {
+      "path": "craft/inspect-landing/mobile-page-01.jpg",
+      "width": 1560,
+      "height": 1688,
+      "bytes": 223703,
+      "sha256": "37b497ac2a0943356d4e9479953cf5fc05bfd0302270d884bc81fcbca9a391c6"
+    },
+    {
+      "path": "craft/inspect-landing/tablet-fold.jpg",
+      "width": 768,
+      "height": 1024,
+      "bytes": 78654,
+      "sha256": "2370240adf889d4e50796f0ab358c973268ade2fddc25fda886cbad76bd281e9"
+    },
+    {
+      "path": "craft/inspect-landing/tablet-page-01.jpg",
+      "width": 1536,
+      "height": 1366,
+      "bytes": 135944,
+      "sha256": "7e45728d237cf2f5781ec2a443293489f377d4b434a1edfb2aaa57ea62cee55b"
+    },
+    {
+      "path": "craft/motion/desktop-hero-mid-motion.jpg",
+      "width": 1440,
+      "height": 1024,
+      "bytes": 116621,
+      "sha256": "e26c56bc3e0bf19af787eeb37a92bd1449518197e09e136e9cd46161de4c173b"
+    },
+    {
+      "path": "craft/motion/desktop-hero-settled.jpg",
+      "width": 1440,
+      "height": 1024,
+      "bytes": 130855,
+      "sha256": "1ca14e81c0bcc2ad1e29c1a68d283f2347dbf2a7bf16bdb77e8efa0c16d33d34"
+    },
+    {
+      "path": "craft/motion/desktop-post-list.jpg",
+      "width": 1440,
+      "height": 1024,
+      "bytes": 121734,
+      "sha256": "263cd812bf58037cf8411b5f590408002f2ee7508202df7df3347f2d2d45ef22"
+    },
+    {
+      "path": "craft/motion/desktop-pricing-scroll.jpg",
+      "width": 1440,
+      "height": 1024,
+      "bytes": 109158,
+      "sha256": "1ad9943b5d5e6d84841ca7dd55d41fd3d2cea12873feb62b54c0b24259f26ab2"
+    },
+    {
+      "path": "craft/motion/flows/desktop-calendar.jpg",
+      "width": 1440,
+      "height": 1271,
+      "bytes": 128226,
+      "sha256": "59367020440a9a7a1582562046f6f71e61264fd3ce99f32d6158c28bdaa7b75f"
+    },
+    {
+      "path": "craft/motion/flows/desktop-identity.jpg",
+      "width": 1440,
+      "height": 1147,
+      "bytes": 122263,
+      "sha256": "7fd3408ed2f539144a6adb0c95dd69a064c1449f18b6d73d5f763e338b30512c"
+    },
+    {
+      "path": "craft/motion/flows/desktop-landing.jpg",
+      "width": 1440,
+      "height": 3619,
+      "bytes": 323700,
+      "sha256": "9cdd506d5a805370a5dd8091f12ea0325b72bf2efabd8e6736cfed41a77d4651"
+    },
+    {
+      "path": "craft/motion/flows/desktop-manager.jpg",
+      "width": 1440,
+      "height": 1056,
+      "bytes": 86334,
+      "sha256": "a3f5d4c15e0d3f5aaf3a1624a4f5a91251d5c675146e5ce313e32e2c8e8b2fb6"
+    },
+    {
+      "path": "craft/motion/flows/desktop-performance.jpg",
+      "width": 1440,
+      "height": 1132,
+      "bytes": 116589,
+      "sha256": "929b2269358093ccff1b5a796e3f8363aaaf85c541a49daa7d4e6958d9a8ec63"
+    },
+    {
+      "path": "craft/motion/flows/desktop-pillars.jpg",
+      "width": 1440,
+      "height": 3398,
+      "bytes": 312543,
+      "sha256": "f7a8b7b1678bf99449037ac12b5a7683993b23ad7785db9a84e9c8e5c4215b53"
+    },
+    {
+      "path": "craft/motion/flows/desktop-post-list.jpg",
+      "width": 1440,
+      "height": 1271,
+      "bytes": 124762,
+      "sha256": "d66c22392033bf0d3a49c0dabd5d7ab0ec25358b99b79265f98e0111011e2216"
+    },
+    {
+      "path": "craft/motion/flows/desktop-strategy.jpg",
+      "width": 1440,
+      "height": 1455,
+      "bytes": 160211,
+      "sha256": "88be347c3b437633bbcf8c02c5f8ff1623ad23e96482ed65aa58e4e6318224cc"
+    },
+    {
+      "path": "craft/motion/flows/mobile-content.jpg",
+      "width": 390,
+      "height": 2365,
+      "bytes": 99692,
+      "sha256": "4aff0a8823b4301d540685b0c252f457ba11323195e74eb99634dd076e336ae9"
+    },
+    {
+      "path": "craft/motion/flows/mobile-identity.jpg",
+      "width": 390,
+      "height": 2095,
+      "bytes": 94271,
+      "sha256": "be47c97c8ffcbfeff551cc29b0cb2985acb63e78488e2f1a4afcda764d7e7919"
+    },
+    {
+      "path": "craft/motion/flows/mobile-landing.jpg",
+      "width": 390,
+      "height": 4560,
+      "bytes": 195295,
+      "sha256": "f05965db4dc425e5b22c2efe4b363e1916661c48b70266cb1cc23046d0999fb7"
+    },
+    {
+      "path": "craft/motion/flows/mobile-manager.jpg",
+      "width": 390,
+      "height": 1640,
+      "bytes": 63789,
+      "sha256": "88ff487d7aec20672896b74b54ebb1cee91a222b2eac3c5e5a5f34862f346e62"
+    },
+    {
+      "path": "craft/motion/flows/mobile-performance.jpg",
+      "width": 390,
+      "height": 2026,
+      "bytes": 89756,
+      "sha256": "c1237095fff6ca9f90b44345924547bda74c65b5924066c6c1d2afb1d02bfbf3"
+    },
+    {
+      "path": "craft/motion/flows/mobile-strategy.jpg",
+      "width": 390,
+      "height": 2639,
+      "bytes": 131455,
+      "sha256": "1dc8c1008c4ab23aba7dc177c1bc7f593f94b249e36a47c028cd38bdab0d14b4"
+    },
+    {
+      "path": "craft/motion/flows/reference-size-actual.jpg",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 117543,
+      "sha256": "481e6c6a21d4aaca25c30206e45d012ccbc6f3288ecfcc93961ccbb35184f2cc"
+    },
+    {
+      "path": "craft/motion/flows/tablet-content.jpg",
+      "width": 768,
+      "height": 1855,
+      "bytes": 112405,
+      "sha256": "a4c17d0393017d81d63e80751a02b211355d6fdfc8f48ec7d1bfb4e78d219a2f"
+    },
+    {
+      "path": "craft/motion/flows/tablet-identity.jpg",
+      "width": 768,
+      "height": 1212,
+      "bytes": 98338,
+      "sha256": "1098cc2f00a4c39e2a11a3c1ab5eb5e65c6d47b3ec3afc2c75b2acdbbd6ff1a3"
+    },
+    {
+      "path": "craft/motion/flows/tablet-manager.jpg",
+      "width": 768,
+      "height": 1102,
+      "bytes": 69546,
+      "sha256": "3150bafcf9eb39b6fc1e5d0b27615e4f173cf0be2af3db9d4d0922256cfba808"
+    },
+    {
+      "path": "craft/motion/flows/tablet-performance.jpg",
+      "width": 768,
+      "height": 1199,
+      "bytes": 96762,
+      "sha256": "049a867d9e9fd300fb40246137ca182bcc2280e702253b17b5d5be6742f8a4fa"
+    },
+    {
+      "path": "craft/motion/flows/tablet-strategy.jpg",
+      "width": 768,
+      "height": 1581,
+      "bytes": 135241,
+      "sha256": "bfed345d0dccc977cae5ad5c0bbc2da113259fc1f690968ea928ad4b409f894b"
+    },
+    {
+      "path": "craft/motion/mobile-agenda.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 45456,
+      "sha256": "75f97496aff6bac47d742933e695e0a636f098c8777f4ac549b3359535fd54a7"
+    },
+    {
+      "path": "craft/motion/mobile-menu.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 41617,
+      "sha256": "060408b05adc85ad895722ea465a0ee0b2fc345f279fbab7b234024d5ff09549"
+    },
+    {
+      "path": "craft/motion/mobile-without-motion.jpg",
+      "width": 390,
+      "height": 844,
+      "bytes": 35943,
+      "sha256": "7b8c78f8e9e784742cff3b7b7374ce7dac608a88b104850393eb588a71cb61cd"
+    },
+    {
+      "path": "craft/screens/desktop-calendar.jpg",
+      "width": 1440,
+      "height": 1271,
+      "bytes": 128273,
+      "sha256": "33475c38a65b3cfedbb4e2c746a838467cd3663bbc23eae1fa28572d29d34c61"
+    },
+    {
+      "path": "craft/screens/desktop-identity.jpg",
+      "width": 1440,
+      "height": 1147,
+      "bytes": 122296,
+      "sha256": "2d6275f566959a32a36e837306219152cfbba944bff7dfca258983d4aa2d8f8f"
+    },
+    {
+      "path": "craft/screens/desktop-landing.jpg",
+      "width": 1440,
+      "height": 3619,
+      "bytes": 322225,
+      "sha256": "1374f15f947c98ca1c93c24f71298c0b5a215be66e8e6086dfde8149f05d15c7"
+    },
+    {
+      "path": "craft/screens/desktop-manager.jpg",
+      "width": 1440,
+      "height": 1056,
+      "bytes": 86404,
+      "sha256": "cce63add8ecdd8a1519159d1ca956b7d40880ffdadc2e9b2e6a6e8ca1001c4fd"
+    },
+    {
+      "path": "craft/screens/desktop-performance.jpg",
+      "width": 1440,
+      "height": 1132,
+      "bytes": 116644,
+      "sha256": "4fa1a29f8127e936b1e92cefc39df58086884bb3359dc41dcea49d29e7d0046c"
+    },
+    {
+      "path": "craft/screens/desktop-pillars.jpg",
+      "width": 1440,
+      "height": 3398,
+      "bytes": 290220,
+      "sha256": "c7d88c0ca0b9fb512a36da84e44c87a0d794056c70a57a92a9b47c3fc2b562b5"
+    },
+    {
+      "path": "craft/screens/desktop-post-list.jpg",
+      "width": 1440,
+      "height": 1271,
+      "bytes": 124847,
+      "sha256": "831e63d05fa6b09994a1ec3f5240471651ff0a4cd8bbcfddcf4cb1ad7dfd4300"
+    },
+    {
+      "path": "craft/screens/desktop-strategy.jpg",
+      "width": 1440,
+      "height": 1455,
+      "bytes": 160257,
+      "sha256": "4a62aa1117f7aef03b3f260022401503c6b744cd02d7ec03e668ed4350760293"
+    },
+    {
+      "path": "craft/screens/mobile-content.jpg",
+      "width": 390,
+      "height": 2365,
+      "bytes": 99672,
+      "sha256": "cc934b3c06ee9ad0d05de18d16b300c79e899fe9fc810c01effc0c871b4b9403"
+    },
+    {
+      "path": "craft/screens/mobile-identity.jpg",
+      "width": 390,
+      "height": 2095,
+      "bytes": 94330,
+      "sha256": "3a789272600e1ba85b8a261f538757418b153de4db57d0fe15a86dc5e7c63a88"
+    },
+    {
+      "path": "craft/screens/mobile-landing.jpg",
+      "width": 390,
+      "height": 4560,
+      "bytes": 185392,
+      "sha256": "11f3130c5be3884642e8f44b2d0e8faecbba6f8212cabcc264adf8ec35244a2a"
+    },
+    {
+      "path": "craft/screens/mobile-manager.jpg",
+      "width": 390,
+      "height": 1640,
+      "bytes": 63839,
+      "sha256": "456c61b2f5389c9c0050be98389111b33f395730506378976a5412898836a799"
+    },
+    {
+      "path": "craft/screens/mobile-performance.jpg",
+      "width": 390,
+      "height": 2026,
+      "bytes": 89802,
+      "sha256": "dc7cef261deb1938b0359d0651f05c3b75cf99e5832a044293b90f84f5926ebf"
+    },
+    {
+      "path": "craft/screens/mobile-strategy.jpg",
+      "width": 390,
+      "height": 2639,
+      "bytes": 131546,
+      "sha256": "817d72c077c3c643707ffa52e942b4c73ba8da8ed97b782eb104610f1a45d758"
+    },
+    {
+      "path": "craft/screens/reference-size-actual.jpg",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 116886,
+      "sha256": "8a6212bcdbcc9813a99c49b03495204dc79dfe6a850f61925c83067546c74142"
+    },
+    {
+      "path": "craft/screens/tablet-content.jpg",
+      "width": 768,
+      "height": 1855,
+      "bytes": 112459,
+      "sha256": "e9a963d5521aedce25e882b0e6c2e1f8acce12a4d3f98c4f1ad34f32e9885642"
+    },
+    {
+      "path": "craft/screens/tablet-identity.jpg",
+      "width": 768,
+      "height": 1212,
+      "bytes": 98370,
+      "sha256": "529f03ed6b7af819a4f92323af6565e3f1de128e7e86b18c07ed7289a2c384a3"
+    },
+    {
+      "path": "craft/screens/tablet-manager.jpg",
+      "width": 768,
+      "height": 1102,
+      "bytes": 69610,
+      "sha256": "f539188d6abc956f49747cb01c01300e250fcf7a6ce42334ee9c3d1a81084da7"
+    },
+    {
+      "path": "craft/screens/tablet-performance.jpg",
+      "width": 768,
+      "height": 1199,
+      "bytes": 96832,
+      "sha256": "c5fe7140ed26c46adebe5c5aa468f608e5e03ef07b741f09935428b80d6641e7"
+    },
+    {
+      "path": "craft/screens/tablet-strategy.jpg",
+      "width": 768,
+      "height": 1581,
+      "bytes": 135343,
+      "sha256": "ed80c26ac9f2a34f29cf190143d4aae3a84ab884c9cad3d7b892bbff793fa1a2"
+    },
+    {
+      "path": "directions/01-cream-orbit.png",
+      "width": 1003,
+      "height": 1568,
+      "bytes": 2132508,
+      "sha256": "b87e65b2e1576ea7ae3a2bba57805bcd99a62a05d6c945ef2805dc380c361a72"
+    },
+    {
+      "path": "directions/02-night-signal.png",
+      "width": 1003,
+      "height": 1568,
+      "bytes": 2333968,
+      "sha256": "1f1e1590c4f7b7910c354211d5c9f0d2f96598c1b800ad52479fadb87b3e079f"
+    },
+    {
+      "path": "directions/03-sage-studio.png",
+      "width": 1003,
+      "height": 1568,
+      "bytes": 2055936,
+      "sha256": "d1c25e015df31fc8f0380533a22d8663300f8af685b32d5cdf92dbe59a19d1ac"
+    },
+    {
+      "path": "prototype/public/assets/orbit.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 272965,
+      "sha256": "4a3e4535182e43221a4e693689bb05b323e16ff99479f773fae9cdb09fc6fd5d"
+    },
+    {
+      "path": "prototype/public/assets/paper.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 2374842,
+      "sha256": "eee3eb6c71d0c5e8e4ec2c54639da0a999d4ff0fb29ea9acee1482d39fb19b5b"
+    },
+    {
+      "path": "prototype/public/assets/scroll-line.png",
+      "width": 793,
+      "height": 1983,
+      "bytes": 142967,
+      "sha256": "bedd6992ed6ca947451d77148d1249af933eecfe5b3983c75c84c2d071889457"
+    },
+    {
+      "path": "references/08-cadence-current-cream.jpg",
+      "width": 1265,
+      "height": 712,
+      "bytes": 58144,
+      "sha256": "c8aaa453d80735107ce90a08ccc165620f7f3e51b03ca95a7774b40de95c11b5"
+    },
+    {
+      "path": "selected/cream-refined.png",
+      "width": 1487,
+      "height": 1058,
+      "bytes": 1948058,
+      "sha256": "39220bdc4bef0f331530a543055406f697e21bac1d9f307b044e07e26906f927"
+    }
+  ],
+  "publication_note": "11 third-party reference captures were removed from the distributed snapshot on 2026-10-28 and retained only in private research storage."
+}

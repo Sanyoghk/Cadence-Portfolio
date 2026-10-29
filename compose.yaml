@@ -1,0 +1,206 @@
+# Local integration stack. Generate ignored env with scripts/start_local_evidence.ps1.
+services:
+  postgres:
+    image: cadence-postgres:local
+    build: {context: ., dockerfile: docker/postgres/Dockerfile}
+    environment:
+      POSTGRES_DB: cadence
+      POSTGRES_USER: cadence_migration
+      POSTGRES_PASSWORD: ${CADENCE_LOCAL_DB_PASSWORD:?Generate local environment first}
+      CADENCE_RUNTIME_DB_PASSWORD: ${CADENCE_LOCAL_RUNTIME_DB_PASSWORD:?Generate local environment first}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cadence_migration -d cadence"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - cadence-postgres-data:/var/lib/postgresql/data
+      - ./docker/postgres/init-runtime.sh:/docker-entrypoint-initdb.d/10-runtime.sh:ro
+      - ./docker/postgres/runtime-permissions.sql:/runtime-permissions.sql:ro
+    networks: [evidence]
+  minio:
+    image: cadence-minio:local
+    build: {context: ./docker/minio}
+    environment:
+      MINIO_ROOT_USER: ${CADENCE_LOCAL_MINIO_ADMIN:?Generate local environment first}
+      MINIO_ROOT_PASSWORD: ${CADENCE_LOCAL_MINIO_ADMIN_PASSWORD:?Generate local environment first}
+      MINIO_BROWSER: "off"
+    volumes: [cadence-minio-data:/data]
+    networks: [evidence]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+  minio-init:
+    image: cadence-minio:local
+    entrypoint: ["/bin/sh", "/bootstrap.sh"]
+    environment:
+      MINIO_ROOT_USER: ${CADENCE_LOCAL_MINIO_ADMIN:?Generate local environment first}
+      MINIO_ROOT_PASSWORD: ${CADENCE_LOCAL_MINIO_ADMIN_PASSWORD:?Generate local environment first}
+      EVIDENCE_ACCESS_KEY: ${CADENCE_LOCAL_S3_ACCESS_KEY:?Generate local environment first}
+      EVIDENCE_SECRET_KEY: ${CADENCE_LOCAL_S3_SECRET_KEY:?Generate local environment first}
+    depends_on: {minio: {condition: service_started}}
+    volumes:
+      - ./docker/minio/bootstrap.sh:/bootstrap.sh:ro
+      - ./docker/minio/runtime-policy.json:/runtime-policy.json:ro
+    networks: [evidence]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+  clamd:
+    image: cadence-clamav:local
+    build: {context: ., dockerfile: docker/clamav/Dockerfile}
+    environment: {TZ: UTC, CLAMAV_NO_FRESHCLAMD: "true"}
+    volumes:
+      - ./docker/clamav/clamd.conf:/etc/clamav/clamd.conf:ro
+      - cadence-clamav-signatures:/var/lib/clamav
+    networks: [evidence]
+    mem_limit: 2g
+    cpus: 2
+    pids_limit: 128
+    healthcheck:
+      test: ["CMD-SHELL", "test \"$$(printf 'PING\\n' | nc -w 2 127.0.0.1 3310)\" = PONG"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+  signature-update:
+    profiles: [updates]
+    image: cadence-clamav:local
+    build: {context: ., dockerfile: docker/clamav/Dockerfile}
+    entrypoint: [freshclam]
+    command: [--stdout, --log=/tmp/freshclam.log, --user=clamav]
+    user: clamav
+    environment: {TZ: UTC}
+    volumes: [cadence-clamav-signatures:/var/lib/clamav]
+    networks: [signature-updates]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,nodev,size=64m"]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    mem_limit: 512m
+    cpus: 1
+    pids_limit: 32
+  app:
+    init: true
+    profiles: [app]
+    build: {context: ., dockerfile: docker/application/Dockerfile}
+    environment:
+      SPRING_PROFILES_ACTIVE: local,s3,clamd,renderer
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/cadence
+      SPRING_DATASOURCE_USERNAME: cadence_runtime
+      SPRING_DATASOURCE_PASSWORD: ${CADENCE_LOCAL_RUNTIME_DB_PASSWORD:?Generate local environment first}
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_JPA_HIBERNATE_DDL_AUTO: validate
+      SPRING_FLYWAY_ENABLED: "true"
+      SPRING_FLYWAY_URL: jdbc:postgresql://postgres:5432/cadence
+      SPRING_FLYWAY_USER: cadence_migration
+      SPRING_FLYWAY_PASSWORD: ${CADENCE_LOCAL_DB_PASSWORD:?Generate local environment first}
+      CADENCE_EVIDENCE_S3_ENDPOINT: http://minio:9000
+      CADENCE_EVIDENCE_S3_BUCKET: cadence-evidence
+      CADENCE_EVIDENCE_S3_REGION: us-east-1
+      CADENCE_EVIDENCE_S3_ACCESS_KEY: ${CADENCE_LOCAL_S3_ACCESS_KEY:?Generate local environment first}
+      CADENCE_EVIDENCE_S3_SECRET_KEY: ${CADENCE_LOCAL_S3_SECRET_KEY:?Generate local environment first}
+      CADENCE_EVIDENCE_S3_ALLOW_INSECURE_LOCAL: "true"
+      CADENCE_EVIDENCE_S3_MINIO_FIXTURE: "true"
+      CADENCE_EVIDENCE_CLAMD_HOST: clamd
+      CADENCE_EVIDENCE_CLAMD_ALLOWED_CIDRS: 172.28.117.0/24
+      CADENCE_EVIDENCE_CLAMD_PRIVATE_CHANNEL_ACKNOWLEDGED: "true"
+      CADENCE_EVIDENCE_CLAMD_SIGNATURE_MAX_AGE: PT48H
+      CADENCE_EVIDENCE_CLEANUP_ENABLED: "true"
+      CADENCE_EVIDENCE_ARTIFACTS_ENABLED: "true"
+      CADENCE_EVIDENCE_RENDERER_HOST: renderer
+      CADENCE_EVIDENCE_RENDERER_ALLOWED_CIDRS: 172.28.117.0/24
+      CADENCE_EVIDENCE_RENDERER_TOKEN: ${CADENCE_LOCAL_RENDERER_TOKEN:?Generate local environment first}
+      CADENCE_EVIDENCE_RENDERER_PRIVATE_CHANNEL_ACKNOWLEDGED: "true"
+      CADENCE_FILE_SCAN_WORKER_ENABLED: "true"
+      CADENCE_URL_FETCH_WORKER_ENABLED: "false"
+    depends_on:
+      postgres: {condition: service_healthy}
+      minio-init: {condition: service_completed_successfully}
+      clamd: {condition: service_healthy}
+      renderer-ready: {condition: service_healthy}
+    networks: [evidence]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    mem_limit: 768m
+    cpus: 2
+    pids_limit: 128
+    healthcheck:
+      test: ["CMD", "/app/healthcheck.sh"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+  gateway:
+    profiles: [app]
+    image: cadence-gateway:local
+    build: {context: ., dockerfile: docker/local-gateway/Dockerfile}
+    user: "10001:10001"
+    entrypoint: [nginx]
+    command: ["-g", "daemon off;"]
+    depends_on: {app: {condition: service_healthy}}
+    ports:
+      - "127.0.0.1:${CADENCE_LOCAL_APP_PORT:-18080}:8080"
+      - "127.0.0.1:${CADENCE_LOCAL_POSTGRES_PORT:-15432}:5432"
+      - "127.0.0.1:${CADENCE_LOCAL_MINIO_PORT:-19000}:9000"
+    volumes: ["./docker/local-gateway/nginx.conf:/etc/nginx/nginx.conf:ro"]
+    networks: [evidence, local-ingress]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,nodev,size=64m,mode=1777"]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    mem_limit: 128m
+    cpus: 0.5
+    pids_limit: 16
+    ulimits:
+      nofile: {soft: 1024, hard: 1024}
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-T", "3", "-O", "/dev/null", "http://127.0.0.1:8080/api/v1/health"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+  renderer:
+    image: cadence/evidence-renderer:local
+    build: {context: ./docker/evidence-renderer}
+    environment:
+      CADENCE_RENDERER_TOKEN: ${CADENCE_LOCAL_RENDERER_TOKEN:?Generate local environment first}
+    networks: [evidence]
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,nodev,size=128m", "/dev/mqueue:ro,noexec,nosuid,nodev,size=4k,mode=000"]
+    shm_size: 256m
+    security_opt:
+      - no-new-privileges:true
+      - seccomp=./docker/evidence-renderer/seccomp.json
+    cap_drop: [ALL]
+    mem_limit: 2g
+    cpus: 1
+    pids_limit: 256
+    # The server must be PID1 and the sole token-bearing process. No exec healthcheck.
+  renderer-ready:
+    image: cadence/evidence-renderer:local
+    entrypoint: [python3, -I, -c, "import time; time.sleep(2147483647)"]
+    depends_on: {renderer: {condition: service_started}}
+    networks: [evidence]
+    read_only: true
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    mem_limit: 64m
+    cpus: 0.1
+    pids_limit: 8
+    healthcheck:
+      test: ["CMD", "python3", "-I", "-c", "import urllib.request; urllib.request.urlopen('http://renderer:8081/health', timeout=2).read()"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+      start_period: 20s
+volumes:
+  cadence-postgres-data:
+  cadence-minio-data:
+  cadence-clamav-signatures:
+networks:
+  signature-updates: {}
+  local-ingress: {}
+  evidence:
+    internal: true
+    ipam:
+      config: [{subnet: 172.28.117.0/24}]

@@ -1,0 +1,61 @@
+{
+ "files": 7,
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 291,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 396,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 800,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 1104,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 1213,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 1344,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "file": "docs/design/ui-rework/prototype/src/styles.css",
+   "line": 1818,
+   "match": "border: 1px solid",
+   "message": "A 1px outlined box. Prefer a filled surface or no box."
+  }
+ ]
+}

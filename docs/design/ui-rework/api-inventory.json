@@ -1,0 +1,609 @@
+{
+  "baseline": "5a71df697fee8fba72eef65364ee87cb28efbc27",
+  "controllers": [
+    {
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "sha256": "c30d43c84b8491c9d23fc6ac1c8bd62b714d6c8f02377e02d9356d6fccd436d0"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/BrandController.java",
+      "sha256": "4311de372bcf818bde1c81b4789fc086900c686e7a02b28101bf032621ffc648"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/BrandEvidenceController.java",
+      "sha256": "37e565328be55eace79ebdcbedd9e3553166c7c9b1f651e9cddecc9ab2a35c95"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/SocialBrandEvidenceController.java",
+      "sha256": "d7d404534bbaeb5efbcedcf764a29505258443bd36ec808a3ef0cfc7379820b2"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "sha256": "1b60256b8c3e1a958797d405970d69f80aa125ec110a46316620879b2cf59a3f"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/IdentityEvidenceController.java",
+      "sha256": "11d98440bd9400cc19a6b2034a7e546fc969109306357f552ec2f97ed32a25af"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "sha256": "7d32506203351d09cfd31ac61606c1a155370c868dcd2ac886a2fa5e3e590c3b"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/EvidenceAnalysisController.java",
+      "sha256": "de6f1ee442f2ae31c6a8450e0236d50d7c7c918dd625429358d017e434505a8c"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/PdfEvidenceReviewController.java",
+      "sha256": "46b8b200ccf7700c8a1722ae8740320118f1f3bf418c78f17dd8082f08fda8d6"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java",
+      "sha256": "e6a174350aef5f6c760e72d8badab63b503047312efd20bd0fecd29a6df8113b"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/SocialEvidenceReviewController.java",
+      "sha256": "ba04b28eb35c9950e0f1421887d3991ade4a16df9e9c265e61187357793b9985"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/AiGenerationController.java",
+      "sha256": "3ad1e9fc5a636f9cb7261816e9cc8967857dc0275114f593876898b0b52e691b"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "sha256": "008c8c694f84a131c84c98d7a1ef41455508ae02e25832faba7b7fb99b50514f"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/ContentGenerationController.java",
+      "sha256": "fd557f74d5c3132e76c35b5ce962089f7987cbcfd99feca84c95b9f695a22beb"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "sha256": "24c9f23342ac1e3f0bdd5d118a631870db0921a4c4f50c8471f9f0a46c433d4f"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/CalendarController.java",
+      "sha256": "df8fbdda03fd072129996ef7246b2b6b2d1c3318f8a38c0ecbda3945cc8f3587"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "sha256": "5aa3474a01189f8f38bfc92c439e0c58c185209c7999e7ea575fb961eee53f14"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/CsvExportController.java",
+      "sha256": "a9f4870ad9587c1531a27b96aad466dc1bd5257fbe9a7bba4ad698be746c6e4a"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/MetricImportController.java",
+      "sha256": "82af2851655443fa34631d26ac88891d8bdab01364bd4060b45503c91a630fcf"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/PerformanceController.java",
+      "sha256": "c55530601f94841d0ebf8ee06e4e8f05f9eb4a67b24e01ba3767877eab7b38b0"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "sha256": "606dabf8c1f4ac3d26f894e61e6bd548d99d2c91d48652fcac17d34e4d6b920d"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/CreatorReportController.java",
+      "sha256": "858aae0dab04caddfbabae8a295396cf84164f0664832a434abc4dc05e6a1105"
+    },
+    {
+      "source": "src/main/java/com/cadence/presentation/JobController.java",
+      "sha256": "8435bd9afbd9bb4f81a4411bc63d3ab9e5a1ef725859a8be316a0b69015d5917"
+    }
+  ],
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/api/v1/workspaces",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 42
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/workspaces",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/workspaces/{workspaceId}",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 68
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/workspaces/{workspaceId}",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 75
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/workspaces/{workspaceId}/archive",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 91
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/workspaces/{workspaceId}/brands",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 102
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/workspaces/{workspaceId}/brands",
+      "source": "src/main/java/com/cadence/presentation/WorkspaceController.java",
+      "line": 120
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}",
+      "source": "src/main/java/com/cadence/presentation/BrandController.java",
+      "line": 31
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/brands/{brandId}",
+      "source": "src/main/java/com/cadence/presentation/BrandController.java",
+      "line": 39
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/archive",
+      "source": "src/main/java/com/cadence/presentation/BrandController.java",
+      "line": 58
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/evidence",
+      "source": "src/main/java/com/cadence/presentation/BrandEvidenceController.java",
+      "line": 39
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/evidence",
+      "source": "src/main/java/com/cadence/presentation/BrandEvidenceController.java",
+      "line": 50
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/evidence",
+      "source": "src/main/java/com/cadence/presentation/BrandEvidenceController.java",
+      "line": 78
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/evidence/social",
+      "source": "src/main/java/com/cadence/presentation/SocialBrandEvidenceController.java",
+      "line": 24
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/identities",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 25
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/identities",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 40
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/identities/from-analysis",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 58
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/identities/{identityId}",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 74
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/identities/{identityId}",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 82
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/identities/{identityId}/approval",
+      "source": "src/main/java/com/cadence/presentation/BrandIdentityController.java",
+      "line": 100
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/identities/from-evidence-analysis",
+      "source": "src/main/java/com/cadence/presentation/IdentityEvidenceController.java",
+      "line": 25
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/identities/{identityId}/evidence-provenance",
+      "source": "src/main/java/com/cadence/presentation/IdentityEvidenceController.java",
+      "line": 45
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/ai-admission/history",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "line": 25
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/ai-admission",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "line": 42
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/evidence/{evidenceId}/ai-admission",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/ai-admission/{admissionId}/snapshot",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "line": 72
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/evidence/{evidenceId}/ai-admission/{admissionId}/withdrawals",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAdmissionController.java",
+      "line": 84
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/cadence/brands/{brandId}/analyze-evidence",
+      "source": "src/main/java/com/cadence/presentation/EvidenceAnalysisController.java",
+      "line": 22
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/document-review",
+      "source": "src/main/java/com/cadence/presentation/PdfEvidenceReviewController.java",
+      "line": 26
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/evidence/{evidenceId}/document-review/admissions",
+      "source": "src/main/java/com/cadence/presentation/PdfEvidenceReviewController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/document-review/admissions/{admissionId}/snapshot",
+      "source": "src/main/java/com/cadence/presentation/PdfEvidenceReviewController.java",
+      "line": 48
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/url-review",
+      "source": "src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java",
+      "line": 26
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/evidence/{evidenceId}/url-review/admissions",
+      "source": "src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/url-review/admissions/{admissionId}/snapshot",
+      "source": "src/main/java/com/cadence/presentation/UrlEvidenceReviewController.java",
+      "line": 48
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/social-review",
+      "source": "src/main/java/com/cadence/presentation/SocialEvidenceReviewController.java",
+      "line": 26
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/evidence/{evidenceId}/social-review/admissions",
+      "source": "src/main/java/com/cadence/presentation/SocialEvidenceReviewController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/evidence/{evidenceId}/social-review/admissions/{admissionId}/snapshot",
+      "source": "src/main/java/com/cadence/presentation/SocialEvidenceReviewController.java",
+      "line": 48
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/analysis-jobs",
+      "source": "src/main/java/com/cadence/presentation/AiGenerationController.java",
+      "line": 46
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/strategy-jobs",
+      "source": "src/main/java/com/cadence/presentation/AiGenerationController.java",
+      "line": 63
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/analysis-results/{id}",
+      "source": "src/main/java/com/cadence/presentation/AiGenerationController.java",
+      "line": 80
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/strategies/{strategyId}",
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "line": 35
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/strategies/{strategyId}/approval",
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "line": 55
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/strategies",
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "line": 67
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/strategies",
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "line": 77
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/strategies/{strategyId}",
+      "source": "src/main/java/com/cadence/presentation/StrategyController.java",
+      "line": 95
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/content-jobs",
+      "source": "src/main/java/com/cadence/presentation/ContentGenerationController.java",
+      "line": 42
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/posts/{postId}/regeneration-jobs",
+      "source": "src/main/java/com/cadence/presentation/ContentGenerationController.java",
+      "line": 66
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/content-results/{id}",
+      "source": "src/main/java/com/cadence/presentation/ContentGenerationController.java",
+      "line": 85
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/posts",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 34
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/posts",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 49
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/{postId}",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 62
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/{postId}/revisions",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 68
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/{postId}/revisions/{revisionId}",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 83
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/posts/{postId}/revisions/{revisionId}",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 90
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/posts/{postId}/revisions/{revisionId}/approval",
+      "source": "src/main/java/com/cadence/presentation/PostController.java",
+      "line": 104
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/calendar/schedules",
+      "source": "src/main/java/com/cadence/presentation/CalendarController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/calendar",
+      "source": "src/main/java/com/cadence/presentation/CalendarController.java",
+      "line": 36
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/{postId}/schedule-history",
+      "source": "src/main/java/com/cadence/presentation/CalendarController.java",
+      "line": 56
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/media-assets",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 32
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/media-assets",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 41
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/media-assets/{assetId}",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 53
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/media-assets/{assetId}/review",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 58
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/media-assets/{assetId}/archive",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 64
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/media-assets/{assetId}/preview",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 70
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/media-assets/{assetId}/bytes",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 78
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/posts/{postId}/revisions/{revisionId}/media",
+      "source": "src/main/java/com/cadence/presentation/MediaController.java",
+      "line": 106
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/exports",
+      "source": "src/main/java/com/cadence/presentation/CsvExportController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exports/{exportId}",
+      "source": "src/main/java/com/cadence/presentation/CsvExportController.java",
+      "line": 42
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exports/{exportId}/download",
+      "source": "src/main/java/com/cadence/presentation/CsvExportController.java",
+      "line": 49
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/metric-imports",
+      "source": "src/main/java/com/cadence/presentation/MetricImportController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/metric-imports/{importId}",
+      "source": "src/main/java/com/cadence/presentation/MetricImportController.java",
+      "line": 55
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/posts/{postId}/metrics",
+      "source": "src/main/java/com/cadence/presentation/MetricImportController.java",
+      "line": 62
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/performance",
+      "source": "src/main/java/com/cadence/presentation/PerformanceController.java",
+      "line": 30
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/metric-observations/{observationId}/attribution",
+      "source": "src/main/java/com/cadence/presentation/PerformanceController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/metric-observations/{observationId}/attribution",
+      "source": "src/main/java/com/cadence/presentation/PerformanceController.java",
+      "line": 69
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/recommendations",
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "line": 31
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/brands/{brandId}/recommendations",
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "line": 52
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/recommendations/{id}",
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "line": 63
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/recommendations/{id}/apply",
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "line": 70
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/recommendations/{id}/dismiss",
+      "source": "src/main/java/com/cadence/presentation/RecommendationController.java",
+      "line": 81
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/brands/{brandId}/reports",
+      "source": "src/main/java/com/cadence/presentation/CreatorReportController.java",
+      "line": 29
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/{id}",
+      "source": "src/main/java/com/cadence/presentation/CreatorReportController.java",
+      "line": 42
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/{id}/result",
+      "source": "src/main/java/com/cadence/presentation/CreatorReportController.java",
+      "line": 49
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/{id}/download",
+      "source": "src/main/java/com/cadence/presentation/CreatorReportController.java",
+      "line": 56
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/jobs/{jobId}",
+      "source": "src/main/java/com/cadence/presentation/JobController.java",
+      "line": 35
+    }
+  ]
+}

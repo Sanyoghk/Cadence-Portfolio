@@ -1,0 +1,2140 @@
+{
+ "url": "http://127.0.0.1:4184/",
+ "at": "2026-10-20T12:26:40.485Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.69,
+    0.48,
+    0.24,
+    0.37,
+    0.37
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3753,
+     "screens": 4.2,
+     "words": 322,
+     "img": 32,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "orbit.png",
+      "scroll-line.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 338.4,
+     "vw": 23.5,
+     "font": "Cormorant Garamond",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 116,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 338.4,
+     "font": "Cormorant Garamond"
+    },
+    "headings": [
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 338.4,
+      "vw": 23.5,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 116,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 418,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 817,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1561,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 108,
+      "vw": 7.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 1846,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 108,
+      "vw": 7.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 1846,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 2302,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.21,
+      "top": 2302,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 279.4,
+      "vw": 19.4,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3258,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.11,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      22,
+      24,
+      36,
+      72,
+      108,
+      279,
+      338
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 14,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.4
+     },
+     "measureChars": 89,
+     "max": {
+      "size": 338.4,
+      "vw": 23.5,
+      "font": "Cormorant Garamond",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Keep the decisions yours.",
+      "above": "CADENCE",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 3181
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f3f0e8",
+       "top": 0,
+       "hsl": {
+        "h": 44,
+        "s": 0.31,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#faf8f2",
+       "top": 760,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.73
+      },
+      {
+       "color": "#686157",
+       "share": 0.23
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.03
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.fixed-frame 1404px",
+      "header.topbar 1348px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 28,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "dm sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3753,
+    "margins": {
+     "left": 46,
+     "right": 46
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 760,
+      "words": 24,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 338,
+       "tag": "h1"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 157,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#brand-identity.identity-curtain.page-grid",
+      "tag": "section",
+      "top": 760,
+      "height": 661,
+      "words": 122,
+      "media": 0,
+      "middle": 31,
+      "heading": {
+       "text": "Let’s read your brand.",
+       "size": 72,
+       "tag": "h2"
+      },
+      "left": 53,
+      "right": 225,
+      "textLeft": 95,
+      "textRight": 225,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 1561,
+      "height": 1188,
+      "words": 103,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 108,
+       "tag": "h3"
+      },
+      "left": 34,
+      "right": 150,
+      "textLeft": 46,
+      "textRight": 150,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 2749,
+      "height": 417,
+      "words": 47,
+      "media": 0,
+      "middle": 533,
+      "heading": {
+       "text": "A little clarity.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 46,
+      "right": 199,
+      "textLeft": 46,
+      "textRight": 199,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.public-footer.page-grid",
+      "tag": "div",
+      "top": 3166,
+      "height": 461,
+      "words": 8,
+      "media": 0,
+      "middle": 296,
+      "heading": {
+       "text": "CADENCE",
+       "size": 279,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 46,
+      "textRight": 71,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 338,
+      "top": 116,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 46,
+      "n": 5
+     },
+     {
+      "x": 95,
+      "n": 4
+     },
+     {
+      "x": 123,
+      "n": 3
+     },
+     {
+      "x": 666,
+      "n": 2
+     },
+     {
+      "x": 878,
+      "n": 2
+     },
+     {
+      "x": 736,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 660,
+     "y": 720,
+     "w": 780,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.72,
+    0.39,
+    0.19,
+    0.35
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3657,
+     "screens": 3.6,
+     "words": 322,
+     "img": 32,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "orbit.png",
+      "scroll-line.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 180.5,
+     "vw": 23.5,
+     "font": "Cormorant Garamond",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 116,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 180.5,
+     "font": "Cormorant Garamond"
+    },
+    "headings": [
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 180.5,
+      "vw": 23.5,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 116,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 286,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 682,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1535,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 1788,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 60,
+      "vw": 7.8,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 1788,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 2267,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.31,
+      "top": 2267,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 149,
+      "vw": 19.4,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3280,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 4,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.11,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      28,
+      38,
+      42,
+      60,
+      149,
+      181
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 14,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.4
+     },
+     "measureChars": 89,
+     "max": {
+      "size": 180.5,
+      "vw": 23.5,
+      "font": "Cormorant Garamond",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Keep the decisions yours.",
+      "above": "CADENCE",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 3203
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f3f0e8",
+       "top": 0,
+       "hsl": {
+        "h": 44,
+        "s": 0.31,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#faf8f2",
+       "top": 625,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.73
+      },
+      {
+       "color": "#686157",
+       "share": 0.23
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.03
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.fixed-frame 732px",
+      "header.topbar 719px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 28,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 6,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "dm sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3657,
+    "margins": {
+     "left": 25,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 625,
+      "words": 24,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 180,
+       "tag": "h1"
+      },
+      "left": 25,
+      "right": 25,
+      "textLeft": 25,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#brand-identity.identity-curtain.page-grid",
+      "tag": "section",
+      "top": 625,
+      "height": 769,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s read your brand.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 32,
+      "right": 77,
+      "textLeft": 74,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 1535,
+      "height": 1167,
+      "words": 103,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 60,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 63,
+      "textLeft": 25,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 2702,
+      "height": 486,
+      "words": 47,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A little clarity.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 25,
+      "right": 168,
+      "textLeft": 25,
+      "textRight": 168,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.public-footer.page-grid",
+      "tag": "div",
+      "top": 3188,
+      "height": 344,
+      "words": 8,
+      "media": 0,
+      "middle": 969,
+      "heading": {
+       "text": "CADENCE",
+       "size": 149,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 25,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 180,
+      "top": 116,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 25,
+      "n": 7
+     },
+     {
+      "x": 102,
+      "n": 3
+     },
+     {
+      "x": 55,
+      "n": 2
+     },
+     {
+      "x": 74,
+      "n": 2
+     },
+     {
+      "x": 468,
+      "n": 2
+     },
+     {
+      "x": 400,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.65,
+    0.79,
+    0.41,
+    0.32,
+    0.49,
+    0.44
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4394,
+     "screens": 5.2,
+     "words": 317,
+     "img": 32,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 2,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "orbit.png",
+      "scroll-line.png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "CADENCE",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 89.7,
+     "vw": 23,
+     "font": "Cormorant Garamond",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 0.84,
+     "upper": true,
+     "italic": true,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 108,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "CADENCE",
+     "words": 1,
+     "lines": 1,
+     "size": 89.7,
+     "font": "Cormorant Garamond"
+    },
+    "headings": [
+     {
+      "text": "›",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.02,
+      "top": 16,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Cadence",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 17,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 89.7,
+      "vw": 23,
+      "font": "Cormorant Garamond",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 0.84,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 108,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Create YOUR brand.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1.1,
+      "upper": false,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 207,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Let’s read your brand.",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 718,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring your source material.",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.67,
+      "top": 956,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Find your rhythm.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 42,
+      "vw": 10.8,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1878,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Standard",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 2129,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 2441,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Plus",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.4,
+      "font": "Cormorant Garamond",
+      "weight": 500,
+      "tracking": -0.04,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 2717,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Price to be confirmed",
+      "words": 4,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 3101,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "A little clarity. A steady creative rhythm.",
+      "words": 7,
+      "chars": 43,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3536,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "CADENCE",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 89.7,
+      "vw": 23,
+      "font": "Cormorant Garamond",
+      "weight": 400,
+      "tracking": -0.065,
+      "leading": 0.9,
+      "upper": true,
+      "italic": true,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4032,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 13,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 5,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "Cormorant Garamond",
+       "share": 0.11,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      28,
+      34,
+      42,
+      60,
+      90
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.6
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 89.7,
+      "vw": 23,
+      "font": "Cormorant Garamond",
+      "text": "CADENCE"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f0e8",
+     "bodyBgHsl": {
+      "h": 44,
+      "s": 0.31,
+      "l": 0.93
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#f3f0e8",
+       "top": 0,
+       "hsl": {
+        "h": 44,
+        "s": 0.31,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#faf8f2",
+       "top": 677,
+       "hsl": {
+        "h": 45,
+        "s": 0.44,
+        "l": 0.96
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1a1814",
+       "share": 0.72
+      },
+      {
+       "color": "#686157",
+       "share": 0.24
+      },
+      {
+       "color": "#faf8f2",
+       "share": 0.03
+      },
+      {
+       "color": "#86623e",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#1a1814",
+      "hsl": {
+       "h": 40,
+       "s": 0.13,
+       "l": 0.09
+      },
+      "fg": "#faf8f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore your brand →"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "div.fixed-frame 370px",
+      "header.topbar 342px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.2
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "cormorant garamond",
+     "dm sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4394,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section#home.hero.page-grid",
+      "tag": "section",
+      "top": 0,
+      "height": 677,
+      "words": 24,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "CADENCE",
+       "size": 90,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#brand-identity.identity-curtain.page-grid",
+      "tag": "section",
+      "top": 677,
+      "height": 1130,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let’s read your brand.",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 46,
+      "textLeft": 45,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.plans-section.page-grid",
+      "tag": "section",
+      "top": 1878,
+      "height": 1589,
+      "words": 103,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Standard",
+       "size": 60,
+       "tag": "h3"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.about-section.page-grid",
+      "tag": "section",
+      "top": 3467,
+      "height": 431,
+      "words": 47,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A little clarity.",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 24,
+      "right": 34,
+      "textLeft": 24,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.public-footer.page-grid",
+      "tag": "div",
+      "top": 3898,
+      "height": 333,
+      "words": 8,
+      "media": 0,
+      "middle": 1304,
+      "heading": {
+       "text": "CADENCE",
+       "size": 90,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.panel-foot",
+      "tag": "footer",
+      "top": 4263,
+      "height": 131,
+      "words": 7,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 132,
+      "textLeft": 24,
+      "textRight": 132,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "CADENCE",
+      "size": 90,
+      "top": 108,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 45,
+      "n": 3
+     },
+     {
+      "x": 65,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 17,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Keep the decisions yours.\" above \"CADENCE\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): div.fixed-frame 1404px | header.topbar 1348px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (page background #f3f0e8, section #f3f0e8, section #faf8f2).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (14, 15, 16, 18, 20, 22, 24, 36, 72, 108, 279, 338).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 1440,
+   "message": "Body text is 14px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5.4:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 2 picture(s) on the page (2 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 89 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"CADENCE\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\desktop-page-01.jpg",
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\<user>\\eclipse-workspace\\cadence\\var\\ui-rework-final-landing\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

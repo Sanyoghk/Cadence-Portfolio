@@ -1,0 +1,72 @@
+{
+  "result": "PASS",
+  "tests": 16,
+  "results": [
+    {
+      "name": "SplitText animates the real CADENCE heading without changing its accessible label",
+      "result": "PASS"
+    },
+    {
+      "name": "SplitText reverts its markup after entrance; base heading remains visible",
+      "result": "PASS"
+    },
+    {
+      "name": "ScrollTrigger owns the public reveals and pricing line",
+      "result": "PASS"
+    },
+    {
+      "name": "leaving public page removes its ScrollTriggers; repeated mounts do not accumulate timelines",
+      "result": "PASS"
+    },
+    {
+      "name": "desktop Calendar ↔ list uses Flip transforms and settles to natural layout",
+      "result": "PASS"
+    },
+    {
+      "name": "rapid alternating pointer actions keep the last content mode and no stale transform",
+      "result": "PASS"
+    },
+    {
+      "name": "keyboard content toggle is immediate and creates no Flip animation",
+      "result": "PASS"
+    },
+    {
+      "name": "native menu can be rapidly opened, closed and dismissed without orphaned styles",
+      "result": "PASS"
+    },
+    {
+      "name": "modal preserves native focus boundary and Escape, including fast close during entry",
+      "result": "PASS"
+    },
+    {
+      "name": "paused GSAP cannot leave menu or dialog content invisible",
+      "result": "PASS"
+    },
+    {
+      "name": "changing prefers-reduced-motion at runtime removes triggers, text splitting and motion styles",
+      "result": "PASS"
+    },
+    {
+      "name": "touch layout uses an immediate agenda switch and accessible native mobile menu",
+      "result": "PASS"
+    },
+    {
+      "name": "unmounting while Flip is running cancels the old component animation",
+      "result": "PASS"
+    },
+    {
+      "name": "an entrance tween exception restores the original heading and keeps the page usable",
+      "result": "PASS"
+    },
+    {
+      "name": "a Flip exception cannot prevent the requested content view or leave hidden cards",
+      "result": "PASS"
+    },
+    {
+      "name": "blocked motion module leaves visible content, usable forms and native modal",
+      "result": "PASS"
+    }
+  ],
+  "consoleErrors": [],
+  "physicalDeviceTested": false
+}

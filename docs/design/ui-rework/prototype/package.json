@@ -1,0 +1,22 @@
+{
+  "name": "prototype",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test": "node --test tests/demo-domain.test.mjs",
+    "lint": "node ../../../../frontend/node_modules/eslint/bin/eslint.js src --config eslint.config.mjs && node ../../../../frontend/node_modules/prettier/bin/prettier.cjs --check src",
+    "typecheck": "node ../../../../frontend/node_modules/typescript/bin/tsc -p tsconfig.motion.json"
+  },
+  "dependencies": {
+    "gsap": "3.15.0",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "vite": "8.3.4"
+  },
+  "packageManager": "pnpm@11.25.0"
+}
