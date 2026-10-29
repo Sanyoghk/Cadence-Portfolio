@@ -32,7 +32,7 @@
     <jacoco.version>0.8.13</jacoco.version>
     <maven-enforcer.version>3.5.0</maven-enforcer.version>
     <maven-surefire.version>3.5.5</maven-surefire.version>
-    <spotless.version>2.44.5</spotless.version>
+    <spotless.version>3.10.4</spotless.version>
     <!-- Security patch overrides; review against the Boot BOM when upgrading. -->
     <jackson-2-bom.version>2.21.7</jackson-2-bom.version>
     <jackson-bom.version>3.1.7</jackson-bom.version>
