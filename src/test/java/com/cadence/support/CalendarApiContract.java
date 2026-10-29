@@ -102,12 +102,12 @@ public abstract class CalendarApiContract extends PostApiContract {
 
   @Test
   void actualFutureDstFoldBothOffsetsPersistAndGapIsRejected() throws Exception {
-    var rules = ZoneId.of("Europe/London").getRules();
-    var fold = rules.nextTransition(clock.instant());
-    while (fold.isGap()) fold = rules.nextTransition(fold.getInstant().plusSeconds(1));
+    var fixture = CalendarDstFixtures.nextFold(clock.instant());
+    var rules = fixture.zone().getRules();
+    var fold = fixture.transition();
     var local = fold.getDateTimeAfter().plusMinutes(30);
-    var first = new CalendarTime("Europe/London", local, fold.getOffsetBefore());
-    var second = new CalendarTime("Europe/London", local, fold.getOffsetAfter());
+    var first = new CalendarTime(fixture.zone().getId(), local, fold.getOffsetBefore());
+    var second = new CalendarTime(fixture.zone().getId(), local, fold.getOffsetAfter());
     var a = approved();
     var b = approved();
     var results =
